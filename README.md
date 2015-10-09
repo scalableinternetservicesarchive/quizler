@@ -8,10 +8,13 @@ Francois Malinowski
 ![alt tag](./Pictures/1.png)
 
 Simen Johnsrud
+
 ![alt tag](./Pictures/2.png)
 
 Lennon Grinta
+
 ![alt tag](./Pictures/3.png)
 
 Silje Christensen
-![alt tag](./Pictures/bilde.png)
+
+![alt tag](./Pictures/bilde.jpg)
