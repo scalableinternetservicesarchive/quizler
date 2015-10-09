@@ -4,6 +4,8 @@ Quizler is an internet service that allows users to take quizzes, as well as joi
  
 Team Members:
 
+Francois Malinowski
+
 <img src="./Pictures/1.png" width="250">
 
 Simen Johnsrud
@@ -16,4 +18,4 @@ Lennon Grinta
 
 Silje Christensen
 
-<img src="./Pictures/bilde.png" width="250">
+<img src="./Pictures/bilde.jpg" width="250">
