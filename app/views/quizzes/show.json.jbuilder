@@ -1,0 +1,1 @@
+json.extract! @quiz, :id, :title, :description, :author, :date, :created_at, :updated_at
