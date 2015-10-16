@@ -11,4 +11,10 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
     visit root_path
     assert page.has_content?('Welcome!')
   end
+
+  test 'pressing sign up link should point to sign up page' do
+    visit root_path
+    click_link('Sign Up')
+    assert page.has_content?('Sign up')
+  end
 end
