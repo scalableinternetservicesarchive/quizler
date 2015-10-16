@@ -6,24 +6,24 @@ class UserTest < ActiveSupport::TestCase
   # end
 
   test 'a user should have an username and an email' do
-    user = User.new(username: 'whatever', email: 'hello@ucsb.edu')
+    user = User.new(username: 'whatever', email: 'hello@ucsb.edu', password: 'password')
     assert user.valid?
 
-    user = User.new(username: '', email: 'hello@ucsb.edu')
+    user = User.new(username: '', email: 'hello@ucsb.edu', password: 'password')
     assert !user.valid?
 
-    user = User.new(username: 'whatever', email: '')
+    user = User.new(username: 'whatever', email: '', password: 'password')
     assert !user.valid?
   end
 
   test 'the email should be formatted correctly' do
-    user = User.new(username: 'whatever', email: 'hello@ucsb.edu')
+    user = User.new(username: 'whatever', email: 'hello@ucsb.edu', password: 'password')
     assert user.valid?
 
-    user = User.new(username: 'whatever', email: 'helloucsb.edu')
+    user = User.new(username: 'whatever', email: 'helloucsb.edu', password: 'password')
     assert !user.valid?
 
-    user = User.new(username: 'whatever', email: 'hello@ucsbedu')
+    user = User.new(username: 'whatever', email: 'hello@ucsbedu', password: 'password')
     assert !user.valid?
   end
 end
