@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-   title: MyString
+  title: MyString
   description: MyText
   author: MyString
   date: MyString
 
 two:
-   title: MyString
+  title: MyString
   description: MyText
   author: MyString
   date: MyString
