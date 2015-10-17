@@ -1,5 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-# before_filter :configure_sign_up_params, only: [:create]
+before_filter :configure_sign_up_params, only: [:create]
 # before_filter :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
@@ -8,9 +8,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  def create
-    super
-  end
+  # def create
+  #   # user = User.new(sign_up_params)
+  #   super
+  # end
 
   # GET /resource/edit
   # def edit
@@ -36,16 +37,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # protected
+  protected
 
   # If you have extra params to permit, append them to the sanitizer.
-  # def configure_sign_up_params
-  #   devise_parameter_sanitizer.for(:sign_up) << :attribute
-  # end
+  def configure_sign_up_params
+    devise_parameter_sanitizer.for(:sign_up) << :username
+  end
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_account_update_params
-  #   devise_parameter_sanitizer.for(:account_update) << :attribute
+  #   devise_parameter_sanitizer.for(:account_update) << :username
   # end
 
   # The path used after sign up.

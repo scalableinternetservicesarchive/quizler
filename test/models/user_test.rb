@@ -11,9 +11,11 @@ class UserTest < ActiveSupport::TestCase
 
     user = User.new(username: '', email: 'hello@ucsb.edu', password: 'password')
     assert !user.valid?
+    assert_equal ['Username can\'t be blank'], user.errors.full_messages
 
     user = User.new(username: 'whatever', email: '', password: 'password')
     assert !user.valid?
+    assert_equal ['Email can\'t be blank'], user.errors.full_messages
   end
 
   test 'the email should be formatted correctly' do
@@ -22,8 +24,10 @@ class UserTest < ActiveSupport::TestCase
 
     user = User.new(username: 'whatever', email: 'helloucsb.edu', password: 'password')
     assert !user.valid?
+    assert_equal ['Email is invalid'], user.errors.full_messages
 
     user = User.new(username: 'whatever', email: 'hello@ucsbedu', password: 'password')
     assert !user.valid?
+    assert_equal ['Email is invalid'], user.errors.full_messages
   end
 end
