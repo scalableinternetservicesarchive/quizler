@@ -11,8 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 20151019061414) do
 
-ActiveRecord::Schema.define(version: 20151019053936) do
+  create_table "questions", force: true do |t|
+    t.string   "question"
+    t.string   "answer1"
+    t.string   "answer2"
+    t.string   "answer3"
+    t.string   "answer4"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "quizzes", force: true do |t|
     t.string   "title"
