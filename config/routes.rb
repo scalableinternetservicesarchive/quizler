@@ -55,4 +55,8 @@ Quizler::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root to: 'dashboard#index'
+
+  devise_for :users, controllers: { registrations: 'users/registrations' }
 end

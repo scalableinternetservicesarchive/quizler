@@ -17,3 +17,6 @@
 
 # Ignore .idea folder (RubyMine folder)
 /.idea
+
+# Ignore MAC OS X stupid files
+.DS_Store
