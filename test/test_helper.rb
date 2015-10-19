@@ -17,6 +17,12 @@ end
 
 class ActionController::TestCase
   include Devise::TestHelpers
+
+  def sign_in_as_user
+    user = User.create(username: 'user_001', email: 'user_001@whatever.com', password: 'password')
+    sign_in user
+    user
+  end
 end
 
 module ActionDispatch

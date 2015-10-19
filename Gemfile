@@ -44,8 +44,13 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem 'annotate'
+end
+
 group :test do
   gem 'capybara'
 end
 
 gem 'devise'
+gem 'foreigner'

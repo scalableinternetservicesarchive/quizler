@@ -13,6 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20151022191118) do
 
+  create_table "friendships", force: true do |t|
+    t.integer  "user_id",     null: false
+    t.integer  "friend_id",   null: false
+    t.datetime "accepted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "friendships", ["friend_id"], name: "index_friendships_on_friend_id"
+  add_index "friendships", ["user_id", "friend_id"], name: "index_friendships_on_user_id_and_friend_id", unique: true
+  add_index "friendships", ["user_id"], name: "index_friendships_on_user_id"
+
   create_table "questions", force: true do |t|
     t.string   "question"
     t.string   "answer1"
@@ -53,5 +65,6 @@ ActiveRecord::Schema.define(version: 20151022191118) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["username"], name: "index_users_on_username", unique: true
 
 end

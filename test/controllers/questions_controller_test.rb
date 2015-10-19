@@ -2,6 +2,9 @@ require 'test_helper'
 
 class QuestionsControllerTest < ActionController::TestCase
   setup do
+    @request.env['devise.mapping'] = Devise.mappings[:user]
+    @current_user = sign_in_as_user
+
     @question = questions(:one)
   end
 

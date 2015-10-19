@@ -25,6 +25,9 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    annotate (2.6.10)
+      activerecord (>= 3.2, <= 4.3)
+      rake (~> 10.4)
     arel (4.0.2)
     bcrypt (3.1.10)
     builder (3.1.4)
@@ -50,6 +53,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.6.0)
+    foreigner (1.7.4)
+      activerecord (>= 3.0.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -131,9 +136,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  foreigner
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)

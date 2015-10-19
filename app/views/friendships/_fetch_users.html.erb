@@ -1,0 +1,5 @@
+<% @users.each do |user| %>
+    <%= "#{user.username} - #{user.email}" %>
+    <%= add_friend_button user %>
+    <br>
+<% end %>
