@@ -6,7 +6,7 @@
       <th>Title</th>
       <th>Description</th>
       <th>Author</th>
-      <th>Date</th>
+      <th>Created at</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,7 +19,7 @@
         <td><%= quiz. title %></td>
         <td><%= quiz.description %></td>
         <td><%= quiz.author %></td>
-        <td><%= quiz.date %></td>
+        <td><%= quiz.created_at %></td>
         <td><%= link_to 'Show', quiz %></td>
         <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
         <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
