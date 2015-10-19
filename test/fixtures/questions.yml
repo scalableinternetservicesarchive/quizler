@@ -5,13 +5,11 @@ one:
   answer1: MyString
   answer2: MyString
   answer3: MyString
-  answer: MyString
-  4: MyString
+  answer4: MyString
 
 two:
   question: MyString
   answer1: MyString
   answer2: MyString
   answer3: MyString
-  answer: MyString
-  4: MyString
+  answer4: MyString
