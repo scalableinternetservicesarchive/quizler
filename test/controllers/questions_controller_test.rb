@@ -21,7 +21,7 @@ class QuestionsControllerTest < ActionController::TestCase
       post :create, question: { answer1: @question.answer1, answer2: @question.answer2, answer3: @question.answer3, answer4: @question.answer4, question: @question.question, quiz_id: @question.quiz_id }
     end
 
-    assert_redirected_to quizzes_path(assigns(:quiz))
+    assert_redirected_to quiz_path(assigns(:quiz))
   end
 
   test "should show question" do

@@ -25,7 +25,6 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     @quiz = Quiz.find(@question.quiz_id)
-    @question.save
     respond_to do |format|
       if @question.save
         format.html { redirect_to @quiz, notice: 'Question was successfully created.' }
