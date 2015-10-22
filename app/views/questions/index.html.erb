@@ -1,28 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @quiz.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @quiz.description %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @quiz.author %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @quiz.created_at %>
-</p>
 
 
-
-<br>
 <h1>Listing questions</h1>
 
 <table>
@@ -41,8 +18,9 @@
   </thead>
 
   <tbody>
-    <% @quiz.questions.each do |question| %>
+    <% @questions.each do |question| %>
       <tr> 
+        
           <td><%= question.question %></td>
           <td><%= question.answer1 %></td>
           <td><%= question.answer2 %></td>
@@ -57,7 +35,8 @@
   </tbody>
 </table>
 
+<br>
 
-<%= link_to 'Add question', new_question_path(:quiz_id => @quiz.id)  %> |
-<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
 <%= link_to 'Back', quizzes_path %>
+
+<%= link_to 'New Question', new_question_path %>
