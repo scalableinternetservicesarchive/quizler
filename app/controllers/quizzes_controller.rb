@@ -15,6 +15,7 @@ class QuizzesController < ApplicationController
   # GET /quizzes/new
   def new
     @quiz = Quiz.new
+    @quiz.author = current_user.username
   end
 
   # GET /quizzes/1/edit

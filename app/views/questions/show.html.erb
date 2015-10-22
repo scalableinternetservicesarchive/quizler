@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @question.question %>
+</p>
+
+<p>
+  <strong>Answer1:</strong>
+  <%= @question.answer1 %>
+</p>
+
+<p>
+  <strong>Answer2:</strong>
+  <%= @question.answer2 %>
+</p>
+
+<p>
+  <strong>Answer3:</strong>
+  <%= @question.answer3 %>
+</p>
+
+<p>
+  <strong>Answer4:</strong>
+  <%= @question.answer4 %>
+</p>
+<p>
+  <strong>Correct answer:</strong>
+  <%= @question.correct_answer %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', :back %>

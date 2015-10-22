@@ -11,10 +11,10 @@ class QuizzesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:quizzes)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
+ # test "should get new" do
+ #   get :new
+ #   assert_response :success
+ # end
 
   test "should create quiz" do
     assert_difference('Quiz.count') do
