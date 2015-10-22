@@ -1,6 +1,4 @@
 Quizler::Application.routes.draw do
-  resources :questions
-
   resources :quizzes
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -61,4 +59,10 @@ Quizler::Application.routes.draw do
   root to: 'dashboard#index'
 
   devise_for :users, controllers: { registrations: 'users/registrations' }
+  resources :quizzes
+  resources :questions
+
+  get 'friends/search' => 'friendships#search_user'
+  get 'friends/fetch_users' => 'friendships#fetch_users'
+  post 'friends/create' => 'friendships#create'
 end

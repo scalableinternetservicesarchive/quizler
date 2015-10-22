@@ -2,6 +2,8 @@ require 'test_helper'
 
 class QuizzesControllerTest < ActionController::TestCase
   setup do
+    sign_in_as_user
+
     @quiz = quizzes(:one)
   end
 
