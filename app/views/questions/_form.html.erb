@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :quiz_id %><br>
+    <%= f.text_field :quiz_id, :readonly => true%>
+  </div>
+  <div class="field">
     <%= f.label :question %><br>
     <%= f.text_field :question %>
   </div>

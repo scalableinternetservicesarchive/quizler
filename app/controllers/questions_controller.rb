@@ -3,6 +3,7 @@ class QuestionsController < ApplicationController
 
   respond_to :html
 
+
   def index
     @questions = Question.all
     respond_with(@questions)
@@ -14,6 +15,7 @@ class QuestionsController < ApplicationController
 
   def new
     @question = Question.new
+    @question.quiz_id = params[:quiz_id]
     respond_with(@question)
   end
 
@@ -42,6 +44,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.require(:question).permit(:question, :answer1, :answer2, :answer3, :answer4)
+      params.require(:question).permit(:question, :answer1, :answer2, :answer3, :answer4, :quiz_id)
     end
 end

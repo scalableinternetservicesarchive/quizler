@@ -6,6 +6,7 @@ one:
   answer2: MyString
   answer3: MyString
   answer4: MyString
+  quiz_id: 1
 
 two:
   question: MyString
@@ -13,3 +14,4 @@ two:
   answer2: MyString
   answer3: MyString
   answer4: MyString
+  quiz_id: 2
