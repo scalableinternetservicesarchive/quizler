@@ -38,12 +38,13 @@ class QuestionsController < ApplicationController
 
   def update
     @question.update(question_params)
-    respond_with(@question)
+    respond_with(@question, :location => quiz_path(Quiz.find(@question.quiz_id)))
+
   end
 
   def destroy
     @question.destroy
-    respond_with(@question)
+    respond_with(@question, :location => quiz_path(Quiz.find(@question.quiz_id)))
   end
 
   private
