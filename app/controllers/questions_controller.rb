@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
   def new
     @question = Question.new
     @question.quiz_id = params[:quiz_id]
-    respond_with(@question)
+    respond_with(@quiz)
   end
 
   def edit
@@ -24,8 +24,17 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(question_params)
+    @quiz = Quiz.find(@question.quiz_id)
     @question.save
-    respond_with(@question)
+    respond_to do |format|
+      if @question.save
+        format.html { redirect_to @quiz, notice: 'Question was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @quiz }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @quiz.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def update
