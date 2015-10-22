@@ -10,6 +10,7 @@
       <th>Answer2</th>
       <th>Answer3</th>
       <th>Answer4</th>
+      <th>Correct_answer</th>
       <th>Quiz_id</th>
       <th></th>
       <th></th>
@@ -26,6 +27,7 @@
           <td><%= question.answer2 %></td>
           <td><%= question.answer3 %></td>
           <td><%= question.answer4 %></td>
+          <td><%= question.correct_answer %></td>
           <td><%= question.quiz_id %></td>
           <td><%= link_to 'Show', question %></td>
           <td><%= link_to 'Edit', edit_question_path(question) %></td>

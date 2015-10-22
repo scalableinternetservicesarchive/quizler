@@ -24,7 +24,10 @@
   <strong>Answer4:</strong>
   <%= @question.answer4 %>
 </p>
-
+<p>
+  <strong>Correct answer:</strong>
+  <%= @question.correct_answer %>
+</p>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', :back %>
