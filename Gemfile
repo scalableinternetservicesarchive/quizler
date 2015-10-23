@@ -54,3 +54,5 @@ end
 
 gem 'devise'
 gem 'foreigner'
+
+gem 'bootstrap-sass'
