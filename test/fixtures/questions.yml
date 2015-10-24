@@ -2,19 +2,19 @@
 
 one:
   question: MyString
-  answer1: MyString
-  answer2: MyString
-  answer3: MyString
-  answer4: MyString
+  answer1: MyString1
+  answer2: MyString2
+  answer3: MyString3
+  answer4: MyString4
   correct_answer: 3
   quiz_id: 1
 
 two:
   question: MyString
-  answer1: MyString
-  answer2: MyString
-  answer3: MyString
-  answer4: MyString
+  answer1: MyString1
+  answer2: MyString2
+  answer3: MyString3
+  answer4: MyString4
   correct_answer: 2
   quiz_id: 2
 
