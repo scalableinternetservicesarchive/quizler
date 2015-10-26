@@ -29,7 +29,13 @@ GEM
       activerecord (>= 3.2, <= 4.3)
       rake (~> 10.4)
     arel (4.0.2)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     bcrypt (3.1.10)
+    bootstrap-sass (3.3.5)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.1.4)
     capybara (2.5.0)
       mime-types (>= 1.16)
@@ -137,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bootstrap-sass
   capybara
   coffee-rails (~> 4.0.0)
   devise
