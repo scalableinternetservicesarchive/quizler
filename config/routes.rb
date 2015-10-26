@@ -71,4 +71,7 @@ Quizler::Application.routes.draw do
   get 'one_player_game_flow/finale'
   get 'one_player_game_flow/score'
 
+  get 'dashboard' => 'dashboard#fetch_questions'
+
+
 end

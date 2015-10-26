@@ -1,4 +1,5 @@
 <h1>Welcome!</h1>
+
 <% if user_signed_in? %>
     <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
     <br>
@@ -9,3 +10,11 @@
     <%= link_to 'Sign Up', new_user_registration_path %>
     <%= link_to 'Log in', new_user_session_path %>
 <% end %>
+
+<%= form_tag({controller: 'dashboard', action: 'fetch_questions'},  method: :get, remote: true) do %>
+    <%= label_tag(:quiz_id, "Join quiz by ID:") %>
+    <%= text_field_tag(:quiz_id, '3') %>
+    <%= link_to 'Find', one_player_game_flow_ready_path(:quiz_id => params[:quiz_id])  %>
+    <!--<%= button_to "Go", one_player_game_flow_question_option_path, :class => "button", :method => :get %>-->
+<% end %>
+

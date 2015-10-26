@@ -1,4 +1,5 @@
 <h1>Ready to Quizzle?</h1>
+<h2><%=@quiz_id%></h2>
 
 <%= button_to "Yeah", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
 <%= button_to "No, take me back!", root_path, :class => "button", :method => :get %>
