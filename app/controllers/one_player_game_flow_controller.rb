@@ -2,6 +2,7 @@ class OnePlayerGameFlowController < ApplicationController
 
 
   def ready
+    @quiz_id = params[:quiz_id]
 
   end
 
@@ -16,5 +17,7 @@ class OnePlayerGameFlowController < ApplicationController
   def finale
 
   end
+
+
 
 end
