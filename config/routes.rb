@@ -1,5 +1,4 @@
 Quizler::Application.routes.draw do
-  resources :quizzes
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -61,8 +60,15 @@ Quizler::Application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :quizzes
   resources :questions
+  #resources :one_player_game_flow
 
   get 'friends/search' => 'friendships#search_user'
   get 'friends/fetch_users' => 'friendships#fetch_users'
   post 'friends/create' => 'friendships#create'
+
+  get 'one_player_game_flow/ready'
+  get 'one_player_game_flow/question_option'
+  get 'one_player_game_flow/finale'
+  get 'one_player_game_flow/score'
+
 end
