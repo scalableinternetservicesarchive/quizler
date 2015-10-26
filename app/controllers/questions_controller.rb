@@ -26,6 +26,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
     @quiz = Quiz.find(@question.quiz_id)
     respond_to do |format|
+
       if @question.save
         format.html { redirect_to @quiz, notice: 'Question was successfully created.' }
         format.json { render action: 'show', status: :created, location: @quiz }
@@ -39,7 +40,6 @@ class QuestionsController < ApplicationController
   def update
     @question.update(question_params)
     respond_with(@question, :location => quiz_path(Quiz.find(@question.quiz_id)))
-
   end
 
   def destroy
