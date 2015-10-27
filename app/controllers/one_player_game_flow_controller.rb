@@ -13,10 +13,15 @@ class OnePlayerGameFlowController < ApplicationController
     @current_question = current_question
 
 
+
   end
 
   def score
+    @finished = false
 
+    if get_question_index >= get_questions.count
+      @finished = true
+    end
   end
 
   def finale

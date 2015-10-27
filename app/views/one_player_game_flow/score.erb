@@ -3,4 +3,10 @@
 <h3>This round:</h3>
 <h3>Total:</h3>
 
-<%= button_to "Next", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
+
+<% if @finished %>
+    <%= button_to "See leaderboard!", one_player_game_flow_finale_path, :class => "button", :method => :get %>
+<% else %>
+    <%= button_to "Next", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
+<% end %>
+

@@ -28,6 +28,12 @@ module CurrentQuiz
 		Quiz.find(session[:current_quiz_id]).questions
 	end
 
+	def get_question_index
+		session[:next_question_index]
+	end
+
+
+
 
 
 
