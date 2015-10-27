@@ -11,10 +11,17 @@
     <%= link_to 'Log in', new_user_session_path %>
 <% end %>
 
-<%= form_tag({controller: 'dashboard', action: 'fetch_questions'},  method: :get, remote: true) do %>
-    <%= label_tag(:quiz_id, "Join quiz by ID:") %>
-    <%= text_field_tag(:quiz_id, '3') %>
-    <%= link_to 'Find', one_player_game_flow_ready_path(:quiz_id => params[:quiz_id])  %>
-    <!--<%= button_to "Go", one_player_game_flow_question_option_path, :class => "button", :method => :get %>-->
-<% end %>
+<%= form_tag(one_player_game_flow_ready_path, :method => "get", id: "search-form") do %>
+    <br>
+    <div class="input-append">
+        <%= label_tag('Join quiz by ID') %>
+        <br>
+        <!-- :input_quiz_id is used by controller
+                The input-text is set to the parameter :input_quiz_id, by the params command
+             :quiz_id is the parameter sent in URL-->
+        <%= text_field_tag :quiz_id, params[:input_quiz_id], placeholder: "Enter ID" %>
+        <button type="submit">Find</button>
+    </div>
+  <% end %>
+  <%= yield %>
 
