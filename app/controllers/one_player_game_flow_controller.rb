@@ -1,14 +1,17 @@
 class OnePlayerGameFlowController < ApplicationController
-
+	include CurrentQuiz
 
   def ready
-    @quiz_id = params[:quiz_id]
-    @current_quiz = Quiz.find(params[:quiz_id])
-    @questions = @current_quiz.questions
-
+  	set_quiz(Quiz.find(params[:quiz_id]))
+  	@quiz = current_quiz
+    @questions = @quiz.questions
   end
 
   def question_option
+  	@quiz = current_quiz
+    @questions = get_questions
+    @current_question = current_question
+
 
   end
 
