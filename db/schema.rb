@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 20151022191118) do
     t.string   "answer2"
     t.string   "answer3"
     t.string   "answer4"
+    t.integer  "quiz_id",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "quiz_id"
     t.integer  "correct_answer"
   end
 
