@@ -20,6 +20,8 @@ class OnePlayerGameFlowController < ApplicationController
 
     @correct_answer = @current_question.correct_answer
     @chosen_answer = params[:format]
+    #@correct_answer_string = "answer" << @correct_answer.to_s
+    #@correct_answer_text = current_question.(@correct_answer_string)
 
     @finished = false
     if (get_question_index+1) >= get_questions.count
@@ -30,13 +32,25 @@ class OnePlayerGameFlowController < ApplicationController
     if @correct_answer.to_i == @chosen_answer.to_i
       @correct_answer_points = 10
       increment_score(@correct_answer_points)
+      increment_correct_answers_count
     end
+
+    @correct_answer_text = current_question.answer1
+    if (@correct_answer.to_i == 2)
+      @correct_answer_text = current_question.answer2
+    elsif (@correct_answer.to_i == 3)
+      @correct_answer_text = current_question.answer3
+    elsif (@correct_answer.to_i == 4)
+      @correct_answer_text = current_question.answer4
+    end
+
     @total_score = get_total_score
 
   end
 
   def finale
-
+    @total_correct_answers_count = get_correct_answers_count
+    @questions_count = current_quiz.questions.count
   end
 
 end
