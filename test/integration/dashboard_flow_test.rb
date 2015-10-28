@@ -19,7 +19,7 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
 
   test 'visit the root page should point to the dashboard controller index action' do
     visit root_path
-    assert page.has_content?('Welcome!')
+    assert page.has_content?('Quizzle Time!')
   end
 
   test 'pressing sign up link should point to sign up page' do
