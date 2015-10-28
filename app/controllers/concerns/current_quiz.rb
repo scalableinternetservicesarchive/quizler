@@ -8,6 +8,7 @@ module CurrentQuiz
 		session[:next_question_index] = -1
 		session[:total_score] = 0
 		@question_counter = 0
+		session[:@correct_answers_count] = 0
 	end
 
 	private
@@ -59,5 +60,14 @@ module CurrentQuiz
 	end
 
 
+	private
+	def increment_correct_answers_count
+		session[:@correct_answers_count] = (session[:@correct_answers_count]).to_i + 1
+	end
+
+	private
+	def get_correct_answers_count
+		session[:@correct_answers_count]
+	end
 
 end
