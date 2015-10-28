@@ -56,3 +56,4 @@ gem 'devise'
 gem 'foreigner'
 
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'

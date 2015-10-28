@@ -59,6 +59,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-sass (4.4.0)
+      sass (>= 3.2)
     foreigner (1.7.4)
       activerecord (>= 3.0.0)
     hike (1.2.3)
@@ -147,6 +149,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  font-awesome-sass
   foreigner
   jbuilder (~> 1.2)
   jquery-rails

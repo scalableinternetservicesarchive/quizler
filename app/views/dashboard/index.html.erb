@@ -1,29 +1,24 @@
-<div class= "panel panel-default center-block text-center">
-    <div class="panel-heading">
-        <h1>Quizzle Time!</h1>
-    </div>
-    <div class="panel-body">
-        <%= form_tag(one_player_game_flow_ready_path, :method => "get", id: "quiz-id-form") do %>
-            <br>
-            <%= label_tag('Join quiz by ID') %>
-            <br>
-            <%= text_field_tag :quiz_id, params[:input_quiz_id], placeholder: "Enter ID" %>
-            <button type="submit">Find</button>
-        <% end %>
+<% content_for :header do %>
+    <h1>Quizzle Time!</h1>
+<% end %>
 
-        <% if user_signed_in? %>
+<%= form_tag(one_player_game_flow_ready_path, :method => "get", id: "quiz-id-form") do %>
+    <br>
+    <%= label_tag('Join quiz by ID') %>
+    <br>
+    <%= text_field_tag :quiz_id, params[:input_quiz_id], placeholder: "Enter ID" %>
+    <button type="submit">Find</button>
+<% end %>
 
-            <br>
-            <%= link_to 'Quizzes', quizzes_path %>
-            <br>
-            <%= link_to 'Find friends', friends_search_path %>
-            <br>
-            <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+<% if user_signed_in? %>
+    <br>
+    <%= link_to 'Quizzes', quizzes_path %>
+    <br>
+    <%= link_to 'Find friends', friends_search_path %>
+    <br>
+    <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'js-dashboard-logout-link' %>
 
-        <% else %>
-            <%= link_to 'Sign Up', new_user_registration_path %>
-            <%= link_to 'Log in', new_user_session_path %>
-        <% end %>
-    </div>
-
-</div>
+<% else %>
+    <%= link_to 'Sign up', new_user_registration_path %>
+    <%= link_to 'Sign in', new_user_session_path, class: 'js-dashboard-login-link' %>
+<% end %>

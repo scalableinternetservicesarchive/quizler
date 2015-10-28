@@ -1,24 +1,19 @@
-<div class= "panel panel-default center-block text-center">
-	<div class="panel-heading">
-		<h1> <%= @quiz.title %></h1>
-	</div>
-		<div class="panel-body">
-			<h3><%= @current_question.question %></h3>
-			<br>
+<% content_for :header do %>
+    <h1><%= @quiz.title %></h1>
+<% end %>
 
-			<%= button_to @current_question.answer1, one_player_game_flow_score_path(1), :class => "button", :method => :get %>
+<h3><%= @current_question.question %></h3>
+<br>
 
-			<%= button_to @current_question.answer2, one_player_game_flow_score_path(2), :id => 2, :class => "button", :method => :get %>
-			<br>
-			<% if @current_question.answer3 != nil %>
-			    <%= button_to @current_question.answer3, one_player_game_flow_score_path(3), :id => 3,  :class => "button", :method => :get %>
-			<%end%>
-			<% if @current_question.answer4 != nil %>
-			    <%= button_to @current_question.answer4, one_player_game_flow_score_path(4), :id => 4, :class => "button", :method => :get %>
-			<%end%>
+<%= button_to @current_question.answer1, one_player_game_flow_score_path(1), :class => "button", :method => :get %>
 
-			<p>Correct answer: <%= @correct_answer %></p>
-		</div>
-	</div>
-</div>
+<%= button_to @current_question.answer2, one_player_game_flow_score_path(2), :id => 2, :class => "button", :method => :get %>
+<br>
+<% if @current_question.answer3 != nil %>
+    <%= button_to @current_question.answer3, one_player_game_flow_score_path(3), :id => 3,  :class => "button", :method => :get %>
+<%end%>
+<% if @current_question.answer4 != nil %>
+    <%= button_to @current_question.answer4, one_player_game_flow_score_path(4), :id => 4, :class => "button", :method => :get %>
+<%end%>
 
+<p>Correct answer: <%= @correct_answer %></p>

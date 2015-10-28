@@ -1,12 +1,8 @@
-<div class= "panel panel-default center-block text-center">
-	<div class="panel-heading">
-  		<h1>Editing question</h1>
-	</div>
-	<div class="panel-body">
+<% content_for :header do %>
+    <h1>Editing question</h1>
+<% end %>
 
-		<%= render 'form' %>
+<%= render 'form' %>
 
-		<%= link_to 'Show', @question %> |
-		<%= link_to 'Back', :back %>
-	</div>
-</div>
+<%= link_to 'Show', @question %> |
+<%= link_to 'Back', :back %>

@@ -1,19 +1,14 @@
-<div class= "panel panel-default center-block text-center">
-	<div class="panel-heading">
-		<h1>Score:</h1>
-	</div>
-		<div class="panel-body">
+<% content_for :header do %>
+    <h1>Score:</h1>
+<% end %>
 
-			<h3>This round: <%= @correct_answer_points %></h3>
-			<h3>Total: <%= @total_score %></h3>
+<h3>This round: <%= @correct_answer_points %></h3>
+<h3>Total: <%= @total_score %></h3>
 
 
-			<% if @finished %>
-			    <%= button_to "See leaderboard!", one_player_game_flow_finale_path, :class => "button", :method => :get %>
-			<% else %>
-			    <%= button_to "Next", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
-			<% end %>
-		</div>
-	</div>
-</div>
+<% if @finished %>
+    <%= button_to "See leaderboard!", one_player_game_flow_finale_path, :class => "button", :method => :get %>
+<% else %>
+    <%= button_to "Next", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
+<% end %>
 
