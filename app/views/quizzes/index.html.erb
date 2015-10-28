@@ -1,33 +1,38 @@
-<h1>Listing quizzes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Author</th>
-      <th>Created at</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @quizzes.each do |quiz| %>
+<div class= "panel panel-default center-block text-center">
+    <div class="panel-heading">
+      <h1>Listing quizzes</h1>
+    </div>
+    <div class="panel-body">
+  <table class="table text-left">
+    <thead>
       <tr>
-        <td><%= quiz.title %></td>
-        <td><%= quiz.description %></td>
-        <td><%= quiz.author %></td>
-        <td><%= quiz.created_at %></td>
-        <td><%= link_to 'Show', quiz %></td>
-        <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
-        <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Author</th>
+        <th>Created at</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @quizzes.each do |quiz| %>
+        <tr>
+          <td><%= quiz.title %></td>
+          <td><%= quiz.description %></td>
+          <td><%= quiz.author %></td>
+          <td><%= quiz.created_at %></td>
+          <td><%= link_to 'Show', quiz %></td>
+          <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
+          <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Quiz', new_quiz_path(@quiz) %> | <%= link_to 'Main View', root_path() %>
+  <br>
+
+  <%= link_to 'New Quiz', new_quiz_path(@quiz) %> | <%= link_to 'Main View', root_path() %>
+  </div>
+</div>

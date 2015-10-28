@@ -1,13 +1,19 @@
-SEARCH USER
+<div class= "panel panel-default center-block">
+	<div class="panel-heading">
+		<h1>Search user</h1>
+	</div>
+	<div class="panel-body">
 
-<%= form_tag({controller: 'friendships', action: 'fetch_users'}, method: :get, remote: true) do %>
-    <%= text_field_tag :username %>
-    <%= submit_tag 'Search' %>
-<% end %>
+	<%= form_tag({controller: 'friendships', action: 'fetch_users'}, method: :get, remote: true) do %>
+	    <%= text_field_tag :username %>
+	    <%= submit_tag 'Search' %>
+	<% end %>
 
-<div class="status-pending-request">
-</div>
+	<div class="status-pending-request">
+	</div>
 
-<div class="js-fetched-users">
+	<div class="js-fetched-users">
 
+	</div>
+	</div>
 </div>
