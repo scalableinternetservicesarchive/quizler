@@ -1,10 +1,17 @@
-<h1>Ready to Quizzle?</h1>
-<h2><%=@current_quiz.title%></h2>
-<p><%=@current_quiz.description%>
-	<br>
-	Number of questions:
-	<%=@questions.count%>	
-</p>
+<div class= "panel panel-default center-block text-center">
+	<div class="panel-heading">
+		<h1>Ready to Quizzle?</h1>
+	</div>
+		<div class="panel-body">
+			<h2><%=@current_quiz.title%></h2>
+			<p><%=@current_quiz.description%>
+				<br>
+				Number of questions:
+				<%=@questions.count%>	
+			</p>
 
-<%= button_to "Yeah", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
-<%= button_to "No, take me back!", root_path, :class => "button", :method => :get %>
+			<%= button_to "Yeah", one_player_game_flow_question_option_path, :class => "button", :method => :get %>
+			<%= button_to "No, take me back!", root_path, :class => "button", :method => :get %>
+		</div>
+	</div>
+</div>
