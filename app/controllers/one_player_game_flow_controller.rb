@@ -16,15 +16,22 @@ class OnePlayerGameFlowController < ApplicationController
   end
 
   def score
-    @chosen_answer = params[:format]
     @current_question = current_question
-    @correct_answer = @current_question.correct_answer
-    @finished = false
-    @total_score = get_total_score
 
+    @correct_answer = @current_question.correct_answer
+    @chosen_answer = params[:format]
+
+    @finished = false
     if (get_question_index+1) >= get_questions.count
       @finished = true
     end
+
+    @correct_answer_points = 0
+    if @correct_answer.to_i == @chosen_answer.to_i
+      @correct_answer_points = 10
+      increment_score(@correct_answer_points)
+    end
+    @total_score = get_total_score
 
   end
 
