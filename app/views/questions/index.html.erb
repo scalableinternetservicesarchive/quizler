@@ -1,48 +1,44 @@
-<div class= "panel panel-default center-block text-center">
-  <div class="panel-heading">
+<% content_for :header do %>
     <h1>Listing questions</h1>
-  </div>
-  <div class="panel-body">
-    <table class="table text-left">
-      <thead>
-        <tr>
-          <th>Question</th>
-          <th>Answer1</th>
-          <th>Answer2</th>
-          <th>Answer3</th>
-          <th>Answer4</th>
-          <th>Correct_answer</th>
-          <th>Quiz_id</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
+<% end %>
 
-      <tbody>
-        <% @questions.each do |question| %>
-          <tr> 
-            
-              <td><%= question.question %></td>
-              <td><%= question.answer1 %></td>
-              <td><%= question.answer2 %></td>
-              <td><%= question.answer3 %></td>
-              <td><%= question.answer4 %></td>
-              <td><%= question.correct_answer %></td>
-              <td><%= question.quiz_id %></td>
-              <td><%= link_to 'Show', question %></td>
-              <td><%= link_to 'Edit', edit_question_path(question) %></td>
-              <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }%></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+<table class="table text-left">
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Answer1</th>
+      <th>Answer2</th>
+      <th>Answer3</th>
+      <th>Answer4</th>
+      <th>Correct_answer</th>
+      <th>Quiz_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
-    <br>
+  <tbody>
+    <% @questions.each do |question| %>
+      <tr>
 
-    <%= link_to 'Back', quizzes_path %>
+          <td><%= question.question %></td>
+          <td><%= question.answer1 %></td>
+          <td><%= question.answer2 %></td>
+          <td><%= question.answer3 %></td>
+          <td><%= question.answer4 %></td>
+          <td><%= question.correct_answer %></td>
+          <td><%= question.quiz_id %></td>
+          <td><%= link_to 'Show', question %></td>
+          <td><%= link_to 'Edit', edit_question_path(question) %></td>
+          <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-    <%= link_to 'New Question', new_question_path %>
-  </div>
-</div>
+<br>
 
+<%= link_to 'Back', quizzes_path %>
+
+<%= link_to 'New Question', new_question_path %>

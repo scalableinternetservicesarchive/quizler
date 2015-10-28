@@ -11,10 +11,10 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
     })
 
     visit root_path
-    click_link 'Log in'
+    click_link 'Sign in'
     fill_in 'Email', with: 'francois@malinowski.fr'
     fill_in 'Password', with: 'mypassword'
-    click_button 'Log in'
+    click_button 'Sign in'
   end
 
   test 'visit the root page should point to the dashboard controller index action' do
@@ -24,7 +24,7 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
 
   test 'pressing sign up link should point to sign up page' do
     visit root_path
-    click_link('Sign Up')
+    click_link('Sign up')
     assert_equal new_user_registration_path, page.current_path
     assert page.has_content?('Sign up')
   end
@@ -44,13 +44,13 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
 
     visit root_path
 
-    click_link('Log in')
+    click_link('Sign in')
     assert_equal new_user_session_path, page.current_path
 
     fill_in 'Email', with: 'francois@malinowski.fr'
     fill_in 'Password', with: 'mypassword'
 
-    click_button 'Log in'
+    click_button 'Sign in'
     assert_equal root_path, page.current_path
     assert page.has_content?('Signed in successfully')
   end
@@ -61,11 +61,11 @@ class DashboardFlowTest < ActionDispatch::IntegrationTest
     visit root_path
     assert page.has_content?('Log out')
 
-    click_link 'Log out'
+    page.find('.js-dashboard-logout-link').click
     assert_equal root_path, page.current_path
     assert page.has_no_content?('Log out')
-    assert page.has_content?('Log in')
-    assert page.has_content?('Sign Up')
+    assert page.has_content?('Sign in')
+    assert page.has_content?('Sign up')
   end
 
 end

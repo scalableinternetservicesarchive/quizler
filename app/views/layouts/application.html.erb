@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quizler</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+    <title>Quizler</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
+    <%= render '/layouts/nav' %>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class= "panel panel-default center-block text-center">
 
-<%= yield %>
+        <% if content_for?(:header) %>
+            <div class="panel-heading">
+              <%= yield(:header) %>
+            </div>
+        <% end %>
 
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+        <div class="panel-body">
+          <%= render '/layouts/flash_messages' %>
+          <%= yield %>
+        </div>
+
+      </div>
+    </div>
+
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

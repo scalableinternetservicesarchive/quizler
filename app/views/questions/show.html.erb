@@ -1,39 +1,35 @@
-<p id="notice"><%= notice %></p>
-<div class= "panel panel-default center-block text-center">
-  <div class="panel-heading">
-      <h1>Show question</h1>
-  </div>
-  <div class="panel-body">
-    <p>
-      <strong>Question:</strong>
-      <%= @question.question %>
-    </p>
+<% content_for :header do %>
+    <h1>Show question</h1>
+<% end %>
 
-    <p>
-      <strong>Answer1:</strong>
-      <%= @question.answer1 %>
-    </p>
+<p>
+  <strong>Question:</strong>
+  <%= @question.question %>
+</p>
 
-    <p>
-      <strong>Answer2:</strong>
-      <%= @question.answer2 %>
-    </p>
+<p>
+  <strong>Answer1:</strong>
+  <%= @question.answer1 %>
+</p>
 
-    <p>
-      <strong>Answer3:</strong>
-      <%= @question.answer3 %>
-    </p>
+<p>
+  <strong>Answer2:</strong>
+  <%= @question.answer2 %>
+</p>
 
-    <p>
-      <strong>Answer4:</strong>
-      <%= @question.answer4 %>
-    </p>
-    <p>
-      <strong>Correct answer:</strong>
-      <%= @question.correct_answer %>
-    </p>
+<p>
+  <strong>Answer3:</strong>
+  <%= @question.answer3 %>
+</p>
 
-    <%= link_to 'Edit', edit_question_path(@question) %> |
-    <%= link_to 'Back', :back %>
-  </div>
-</div>
+<p>
+  <strong>Answer4:</strong>
+  <%= @question.answer4 %>
+</p>
+<p>
+  <strong>Correct answer:</strong>
+  <%= @question.correct_answer %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', :back %>
