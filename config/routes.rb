@@ -65,6 +65,8 @@ Quizler::Application.routes.draw do
   get 'friends/search' => 'friendships#search_user'
   get 'friends/fetch_users' => 'friendships#fetch_users'
   post 'friends/create' => 'friendships#create'
+  get 'friends/friendship_requests' => 'friendships#friendship_requests'
+  post 'friends/accept_friendship' => 'friendships#accept_friendship'
 
   get 'one_player_game_flow/ready'
   get 'one_player_game_flow/question_option'

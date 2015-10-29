@@ -30,4 +30,27 @@ class FriendshipsController < ApplicationController
       end
     end
   end
+
+  def friendship_requests
+    @incoming_pending_friendships = Friendship.get_incoming_pending_friendships_for(current_user)
+  end
+
+  def accept_friendship
+    requested_friendship = Friendship.find_by_id(params[:friendship_id])
+
+    respond_to do |format|
+      if requested_friendship.nil?
+        format.json { render json: {status: 'error', errorType: 'friendshipInexistant'}}
+      elsif !requested_friendship.accepted_at.nil?
+        format.json { render json: {status: 'error', errorType: 'friendshipAccepted'}}
+      else
+
+        if requested_friendship.update_attributes(accepted_at: DateTime.now)
+          format.json { render json: {status: 'success', friendship: requested_friendship.id} }
+        else
+          format.json { render json: {status: 'error', errorType: 'cannotSave', friendship: requested_friendship.id, messages: requested_friendship.errors.full_messages}}
+        end
+      end
+    end
+  end
 end

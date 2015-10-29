@@ -50,6 +50,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'mocha' # to use any_instance, stubs and stuff...
 end
 
 gem 'devise'
@@ -57,3 +58,5 @@ gem 'foreigner'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+
+gem 'faker'

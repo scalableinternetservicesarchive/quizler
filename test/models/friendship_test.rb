@@ -50,4 +50,14 @@ class FriendshipTest < ActiveSupport::TestCase
     assert valid_friendship.valid?
   end
 
+  test 'get_incoming_pending_friendships_for returns list of pending friend requests for a user' do
+    user_6 = User.create(username: 'user6', email: 'user6@ucsb.edu', password: 'password')
+
+    friendship_5 = Friendship.create(user: user_6, friend: @user_1)
+
+    assert_equal [@friendship_4, friendship_5], Friendship.get_incoming_pending_friendships_for(@user_1)
+    assert_equal [@friendship_2], Friendship.get_incoming_pending_friendships_for(@user_3)
+    assert_equal [], Friendship.get_incoming_pending_friendships_for(@user_2)
+  end
+
 end

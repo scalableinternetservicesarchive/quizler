@@ -1,0 +1,11 @@
+<% content_for :header do %>
+    <h1>Friend Requests</h1>
+<% end %>
+
+You have <%= number_friend_requests_text(@incoming_pending_friendships)%>.
+<br />
+
+<% @incoming_pending_friendships.each do |friendship| %>
+    <%=friendship.user.username %>
+    <%= button_tag 'Confirm', class: 'js-confirm-friendship', data: {path: friends_accept_friendship_path, id: friendship.id} %>
+<% end %>
