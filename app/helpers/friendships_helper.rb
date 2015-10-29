@@ -17,4 +17,8 @@ module FriendshipsHelper
 
     button_tag value_button, options
   end
+
+  def number_friend_requests_text(pending_friendships)
+    pluralize(pending_friendships.count, 'friend request')
+  end
 end

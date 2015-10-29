@@ -16,23 +16,28 @@ class Friendship < ActiveRecord::Base
 
   validate :validation_uniqueness_of_friendship
 
-  # validates_uniqueness_of :user_id, scope: [:friend_id], message: 'Friendship already exists'
+  class << self
+    def get_friendships_including_pending(user)
+      where('user_id = ? OR friend_id = ?', user, user)
+    end
 
-  def self.get_friendships_including_pending(user)
-    where('user_id = ? OR friend_id = ?', user, user)
+    def get_friends(user)
+      where('(user_id = ? OR friend_id = ?) AND accepted_at IS NOT NULL', user, user)
+    end
+
+    def get_pending_friends(user)
+      where('(user_id = ? OR friend_id = ?) AND accepted_at IS NULL', user, user)
+    end
+
+    def get_friendship(user_1, user_2)
+      where('(user_id = ? AND friend_id = ?) OR (user_id = ? AND friend_id = ?)', user_1, user_2, user_2, user_1).first
+    end
+
+    def get_incoming_pending_friendships_for(user)
+      where('friend_id = ? AND accepted_at IS NULL', user)
+    end
   end
 
-  def self.get_friends(user)
-    where('(user_id = ? OR friend_id = ?) AND accepted_at IS NOT NULL', user, user)
-  end
-
-  def self.get_pending_friends(user)
-    where('(user_id = ? OR friend_id = ?) AND accepted_at IS NULL', user, user)
-  end
-
-  def self.get_friendship(user_1, user_2)
-    where('(user_id = ? AND friend_id = ?) OR (user_id = ? AND friend_id = ?)', user_1, user_2, user_2, user_1).first
-  end
 
   private
 
