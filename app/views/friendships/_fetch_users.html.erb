@@ -1,5 +1,17 @@
-<% @users.each do |user| %>
-    <%= "#{user.username} - #{user.email}" %>
-    <%= add_friend_button user %>
-    <br>
+<table class="table friendship-request-table" align="center">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <th><%= user.username %></th>
+        <td><%= user.email %></td>
+        <td><%= add_friend_button user %></td>
+      </tr>
 <% end %>
+  </tbody>
+</table>
