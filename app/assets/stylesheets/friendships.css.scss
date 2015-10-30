@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.friendship-request-table {
+.friendship-table {
   width: initial !important;
+}
+
+.friendship-table--center thead tr th {
+  text-align: center !important;
 }

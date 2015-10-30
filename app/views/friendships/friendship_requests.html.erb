@@ -5,12 +5,12 @@
 You have <%= number_friend_requests_text(@incoming_pending_friendships)%>.
 <br /><br />
 
-<table class="table friendship-request-table" align="center">
+<table class="table friendship-table friendship-table--center" align="center">
   <tbody>
   <% @incoming_pending_friendships.each do |friendship| %>
     <tr>
       <th><%=friendship.user.username %></th>
-      <th><%= button_tag 'Confirm', class: 'js-confirm-friendship', data: {path: friends_accept_friendship_path, id: friendship.id} %></th>
+      <th><%= button_tag 'Confirm', class: 'js-confirm-friendship', data: {path: accept_friendship_friends_path, id: friendship.id} %></th>
     </tr>
   <% end %>
   </tbody>

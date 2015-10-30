@@ -10,8 +10,9 @@
               <i class="fa fa-users"></i>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to 'Find Friends', friends_search_path %></li>
-              <li><%= link_to 'Friend Requests', friends_friendship_requests_path, class: 'js-nav-friends-friend-requests-link' %></li>
+              <li><%= link_to 'Find Friends', search_friends_path %></li>
+              <li><%= link_to 'Friend Requests', friendship_requests_friends_path, class: 'js-nav-friends-friend-requests-link' %></li>
+              <li><%= link_to 'My Friends', friends_path %></li>
             </ul>
           </li>
           <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>

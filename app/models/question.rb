@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: questions
+#
+#  id             :integer          not null, primary key
+#  question       :string(255)
+#  answer1        :string(255)
+#  answer2        :string(255)
+#  answer3        :string(255)
+#  answer4        :string(255)
+#  quiz_id        :integer          not null
+#  created_at     :datetime
+#  updated_at     :datetime
+#  correct_answer :integer
+#
+
 class Question < ActiveRecord::Base
 
 	validates :question, :answer1, :answer2, :quiz_id, :correct_answer, presence: true
