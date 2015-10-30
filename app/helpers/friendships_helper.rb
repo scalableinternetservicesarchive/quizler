@@ -3,7 +3,7 @@ module FriendshipsHelper
   def add_friend_button(user)
     value_button = 'Add Friend'
     options = {
-        data: {path: friends_create_path, id: user.id} ,
+        data: {path: friends_path, id: user.id} ,
         class: 'js-add-friend-btn',
     }
 

@@ -1,0 +1,22 @@
+<% content_for :header do %>
+    <h1>Friends</h1>
+<% end %>
+
+You have <%= pluralize(@friends.count, 'friend') %>.
+
+<table class="table friendship-table friendship-table--center" align="center">
+  <thead>
+    <tr>
+        <th>Username</th>
+        <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @friends.each do |friend| %>
+        <tr>
+            <td><%= friend.username %></td>
+            <td>-</td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -7,7 +7,7 @@ class FriendshipsControllerTest < ActionController::TestCase
   end
 
   test 'search_user action should work' do
-    get :search_user
+    get :search
     assert_response :success
   end
 
@@ -169,5 +169,21 @@ class FriendshipsControllerTest < ActionController::TestCase
     jsonResponse = JSON.parse(response.body)
     assert_equal 'error', jsonResponse['status']
     assert_equal 'cannotSave', jsonResponse['errorType']
+  end
+
+  test 'index get all user friends' do
+    friend_1 = User.create!(username: 'user1', email: 'user1@ucsb.edu', password: 'password')
+    friend_2 = User.create!(username: 'user2', email: 'user2@ucsb.edu', password: 'password')
+    pending_friend = User.create!(username: 'user3', email: 'user3@ucsb.edu', password: 'password')
+    not_friend = User.create!(username: 'user4', email: 'user4@ucsb.edu', password: 'password')
+
+    friendship_1 = Friendship.create!(user: friend_1, friend: @current_user, accepted_at: DateTime.now)
+    friendship_2 = Friendship.create!(user: @current_user, friend: friend_2, accepted_at: DateTime.now)
+    Friendship.create!(user: pending_friend, friend: @current_user, accepted_at: nil)
+
+    get :index
+
+    assert_response :success
+    assert_equal [friend_1, friend_2].sort, assigns(:friends).sort
   end
 end

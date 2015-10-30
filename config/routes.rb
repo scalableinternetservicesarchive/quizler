@@ -62,11 +62,21 @@ Quizler::Application.routes.draw do
   resources :questions
   #resources :one_player_game_flow
 
-  get 'friends/search' => 'friendships#search_user'
-  get 'friends/fetch_users' => 'friendships#fetch_users'
-  post 'friends/create' => 'friendships#create'
-  get 'friends/friendship_requests' => 'friendships#friendship_requests'
-  post 'friends/accept_friendship' => 'friendships#accept_friendship'
+  resources :friends, controller: 'friendships', only: [:index, :create] do
+    collection do
+      get 'search'
+      get 'fetch_users'
+      get 'friendship_requests'
+      post 'accept_friendship'
+    end
+  end
+  #
+  # get 'friends/search' => 'friendships#search_user'
+  # get 'friends/fetch_users' => 'friendships#fetch_users'
+  # post 'friends/create' => 'friendships#create'
+  # get 'friends/friendship_requests' => 'friendships#friendship_requests'
+  # post 'friends/accept_friendship' => 'friendships#accept_friendship'
+  # get 'friends/' => 'friendships#index'
 
   get 'one_player_game_flow/ready'
   get 'one_player_game_flow/question_option'

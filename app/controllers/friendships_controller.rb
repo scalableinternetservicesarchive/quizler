@@ -1,6 +1,6 @@
 class FriendshipsController < ApplicationController
 
-  def search_user
+  def search
 
   end
 
@@ -52,5 +52,9 @@ class FriendshipsController < ApplicationController
         end
       end
     end
+  end
+
+  def index
+    @friends = current_user.get_friends
   end
 end
