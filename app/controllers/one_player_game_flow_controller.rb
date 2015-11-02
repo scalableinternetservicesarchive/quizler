@@ -56,6 +56,8 @@ class OnePlayerGameFlowController < ApplicationController
     @total_correct_answers_count = get_correct_answers_count
     @questions_count = current_quiz.questions.count
     @total_score = get_total_score
+    cell = Highscore.new(user_id: 1, quiz_id: 1, score: 4)
+    cell.save!
 
   end
 
