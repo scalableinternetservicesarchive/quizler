@@ -55,6 +55,8 @@ class OnePlayerGameFlowController < ApplicationController
   def finale
     @total_correct_answers_count = get_correct_answers_count
     @questions_count = current_quiz.questions.count
+    @total_score = get_total_score
+
   end
 
 end
