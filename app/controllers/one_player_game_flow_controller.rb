@@ -2,9 +2,13 @@ class OnePlayerGameFlowController < ApplicationController
 	include CurrentQuiz
 
   def ready
-  	set_quiz(Quiz.find(params[:quiz_id]))
-  	@quiz = current_quiz
-    @questions = @quiz.questions
+    begin
+      set_quiz(Quiz.find(params[:quiz_id]))
+      @quiz = current_quiz
+      @questions = @quiz.questions
+    rescue ActiveRecord::RecordNotFound
+      redirect_to root_url, :flash => { :alert => "The quiz does not exist" }
+    end
   end
 
   def question_option
