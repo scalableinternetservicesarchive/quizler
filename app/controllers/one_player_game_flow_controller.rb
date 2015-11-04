@@ -53,8 +53,17 @@ class OnePlayerGameFlowController < ApplicationController
   end
 
   def finale
-    @total_correct_answers_count = get_correct_answers_count
-    @questions_count = current_quiz.questions.count
+    begin
+      @total_correct_answers_count = get_correct_answers_count
+      @questions_count = current_quiz.questions.count
+      @total_score = get_total_score
+      cell = Highscore.new(user_id: current_user.id, quiz_id: current_quiz.id, score: @total_score)
+      cell.save!
+    rescue
+      flash.now[:alert] = "Results not recorded, you've already taken this quiz!"
+    end
+    @highscore = Highscore.where(["quiz_id = ?", current_quiz.id]).order("score DESC")
   end
+
 
 end

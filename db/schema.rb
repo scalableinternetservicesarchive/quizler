@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151022191118) do
+ActiveRecord::Schema.define(version: 20151102191139) do
 
   create_table "friendships", force: true do |t|
     t.integer  "user_id",     null: false
@@ -24,6 +24,15 @@ ActiveRecord::Schema.define(version: 20151022191118) do
   add_index "friendships", ["friend_id"], name: "index_friendships_on_friend_id"
   add_index "friendships", ["user_id", "friend_id"], name: "index_friendships_on_user_id_and_friend_id", unique: true
   add_index "friendships", ["user_id"], name: "index_friendships_on_user_id"
+
+  create_table "highscores", force: true do |t|
+    t.integer "score"
+    t.integer "user_id", null: false
+    t.integer "quiz_id", null: false
+  end
+
+  add_index "highscores", ["quiz_id"], name: "index_highscores_on_quiz_id"
+  add_index "highscores", ["user_id"], name: "index_highscores_on_user_id"
 
   create_table "questions", force: true do |t|
     t.string   "question"
