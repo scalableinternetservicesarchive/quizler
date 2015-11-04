@@ -62,6 +62,7 @@ class OnePlayerGameFlowController < ApplicationController
     rescue
       flash.now[:alert] = "Results not recorded, you've already taken this quiz!"
     end
+    @highscore = Highscore.where(["quiz_id = ?", current_quiz.id]).order("score DESC")
   end
 
 
