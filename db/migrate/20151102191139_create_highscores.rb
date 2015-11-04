@@ -1,6 +1,8 @@
 class CreateHighscores < ActiveRecord::Migration
   def change
-    create_table(:highscores, id: false) do |t|
+    #create_table(:highscores, id: false, primary_key: 'user_id' ) do |t|
+    create_table(:highscores) do |t|
+
       t.integer :score
 
       t.references :user, index: true, null: false, foreign_key: true

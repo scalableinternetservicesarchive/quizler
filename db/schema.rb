@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20151102191139) do
   add_index "friendships", ["user_id", "friend_id"], name: "index_friendships_on_user_id_and_friend_id", unique: true
   add_index "friendships", ["user_id"], name: "index_friendships_on_user_id"
 
-  create_table "highscores", id: false, force: true do |t|
+  create_table "highscores", force: true do |t|
     t.integer "score"
     t.integer "user_id", null: false
     t.integer "quiz_id", null: false
