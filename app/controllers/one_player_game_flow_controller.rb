@@ -1,5 +1,7 @@
 class OnePlayerGameFlowController < ApplicationController
-	include CurrentQuiz
+	skip_before_filter :authenticate_user!
+  include CurrentQuiz
+
 
   def ready
     begin
@@ -57,9 +59,14 @@ class OnePlayerGameFlowController < ApplicationController
       @total_correct_answers_count = get_correct_answers_count
       @questions_count = current_quiz.questions.count
       @total_score = get_total_score
-      cell = Highscore.new(user_id: current_user.id, quiz_id: current_quiz.id, score: @total_score)
-      cell.save!
+      if user_signed_in?
+        cell = Highscore.new(user_id: current_user.id, quiz_id: current_quiz.id, score: @total_score)
+        cell.save!
+      else
+        flash.now[:alert] = "Results not recorded, you're not logged in!" 
+      end
     rescue
+      errors.add("Results not recorded, you've already taken this quiz!")
       flash.now[:alert] = "Results not recorded, you've already taken this quiz!"
     end
     @highscore = Highscore.where(["quiz_id = ?", current_quiz.id]).order("score DESC")
