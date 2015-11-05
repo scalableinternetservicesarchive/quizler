@@ -26,8 +26,6 @@ class OnePlayerGameFlowController < ApplicationController
 
     @correct_answer = @current_question.correct_answer
     @chosen_answer = params[:format]
-    #@correct_answer_string = "answer" << @correct_answer.to_s
-    #@correct_answer_text = current_question.(@correct_answer_string)
 
     @finished = false
     if (get_question_index+1) >= get_questions.count
