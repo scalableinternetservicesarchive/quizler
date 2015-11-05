@@ -66,7 +66,6 @@ class OnePlayerGameFlowController < ApplicationController
         flash.now[:alert] = "Results not recorded, you're not logged in!" 
       end
     rescue
-      errors.add("Results not recorded, you've already taken this quiz!")
       flash.now[:alert] = "Results not recorded, you've already taken this quiz!"
     end
     @highscore = Highscore.where(["quiz_id = ?", current_quiz.id]).order("score DESC")
