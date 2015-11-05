@@ -14,25 +14,15 @@
 
   <!-- Adding more users -->
   <load>
-    <arrivalphase phase="1" duration="1" unit="second">
-      <users interarrival="1" unit="second"></users>
+    <arrivalphase phase="1" duration="30" unit="second">
+      <users arrivalrate="1" unit="second"></users>
     </arrivalphase>
-    <!-- <arrivalphase phase="1" duration="30" unit="second">
-      <users interarrival="2" unit="second"></users>
-    </arrivalphase> -->
-<!--    <arrivalphase phase="2" duration="60" unit="second">
+    <arrivalphase phase="2" duration="30" unit="second">
+      <users arrivalrate="2" unit="second"></users>
+    </arrivalphase>
+    <arrivalphase phase="3" duration="30" unit="second">
       <users arrivalrate="4" unit="second"></users>
-    </arrivalphase>
-    <arrivalphase phase="3" duration="60" unit="second">
-      <users arrivalrate="6" unit="second"></users>
-    </arrivalphase>
-    <arrivalphase phase="4" duration="60" unit="second">
-      <users arrivalrate="8" unit="second"></users>
-    </arrivalphase>
-    <arrivalphase phase="5" duration="60" unit="second">
-      <users arrivalrate="10" unit="second"></users>
-    </arrivalphase>
-    -->
+    </arrivalphase>   
   </load>
 
   <options>
@@ -51,7 +41,7 @@
 
 
 
-    <session name="create-quiz" probability="0" type="ts_http">
+    <session name="create-quiz" probability="20" type="ts_http">
       <request>
         <http url="/" version="1.1" method='GET'></http>
       </request>
@@ -177,7 +167,7 @@
 
 
 
-    <session name="play-game" probability="0" type="ts_http">
+    <session name="play-game" probability="50" type="ts_http">
       <request>
         <http url="/" version="1.1" method='GET'></http>
       </request>
@@ -298,7 +288,7 @@
 
 
 
-    <session name="search-all-friends" probability="100" type="ts_http">
+    <session name="search-all-friends" probability="20" type="ts_http">
 
       <!-- Go to main page -->
       <request>
@@ -339,8 +329,16 @@
 
       <!-- Go to Search user page -->
       <request>
+        <dyn_variable name="meta_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
         <http url="/friends/search" method="GET" version="1.1"></http>
       </request>
+
+      <!-- <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
+          {ok, Val} = ts_dynvars:lookup(meta_token, DynVars),
+          list_to_binary(http_uri:encode(binary_to_list(Val)))
+        end.">
+        <var name="escaped_meta_token" />
+      </setdynvars> -->
 
       <thinktime value="5" random="true"></thinktime>
 
@@ -352,11 +350,12 @@
       </request>
 
       <!-- Friend request to Jeff -->
-      <request>
-        <http url="/friends" method="POST" version="1.1" content_type="application/json" contents="{&quot;user_id&quot;: 2; &quot;authenticity_token&quot;: &quot;%%_escaped_authenticity_token%%&quot;}">
+      <!-- <request subst="true">
+        <http url="/friends" method="POST" version="1.1" content_type="application/json" contents="{&quot;user_id&quot;: &quot;%%_escaped_meta_token%%&quot;}">
           <http_header name="Accept" value="application/json"/>
+          <http_header name="X-CSRF-Token" value="%%_escaped_meta_token%%"/>
         </http>
-      </request>
+      </request> -->
 
     </session>
 
@@ -367,7 +366,7 @@
 
 
 
-    <session name="see-friend-requests-and-look-at-friends" probability="0" type="ts_http">
+    <session name="see-friend-requests-and-look-at-friends" probability="10" type="ts_http">
 
       <!-- Go to main page -->
       <request>
