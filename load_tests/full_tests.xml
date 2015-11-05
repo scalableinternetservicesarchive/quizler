@@ -14,15 +14,18 @@
 
   <!-- Adding more users -->
   <load>
-    <arrivalphase phase="1" duration="30" unit="second">
+    <arrivalphase phase="1" duration="60" unit="second">
       <users arrivalrate="1" unit="second"></users>
     </arrivalphase>
-    <arrivalphase phase="2" duration="30" unit="second">
+    <arrivalphase phase="2" duration="60" unit="second">
+      <users arrivalrate="1.5" unit="second"></users>
+    </arrivalphase>
+    <arrivalphase phase="3" duration="60" unit="second">
       <users arrivalrate="2" unit="second"></users>
     </arrivalphase>
-    <arrivalphase phase="3" duration="30" unit="second">
+    <arrivalphase phase="4" duration="60" unit="second">
       <users arrivalrate="4" unit="second"></users>
-    </arrivalphase>   
+    </arrivalphase>  
   </load>
 
   <options>
@@ -343,11 +346,13 @@
       <thinktime value="5" random="true"></thinktime>
 
       <!-- Search for all users -->
-      <request>
-        <http url="/friends/fetch_users?username=" method="GET" version="1.1">
-          <http_header name="Accept" value="application/javascript"/>
-        </http>
-      </request>
+      <transaction name="searching_all_users">
+        <request>
+          <http url="/friends/fetch_users?username=" method="GET" version="1.1">
+            <http_header name="Accept" value="application/javascript"/>
+          </http>
+        </request>
+      </transaction>
 
       <!-- Friend request to Jeff -->
       <!-- <request subst="true">
@@ -405,17 +410,21 @@
 
       <thinktime value="5" random="true"></thinktime>
 
-      <!-- Go to Search user page -->
-      <request>
-        <http url="/friends/friendship_requests" method="GET" version="1.1"></http>
-      </request>
+      <!-- Go to friend requests page -->
+      <transaction name="friend_requests">
+        <request>
+          <http url="/friends/friendship_requests" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
 
       <thinktime value="10" random="true"></thinktime>
 
       <!-- Look at my friends -->
-      <request>
-        <http url="/friends" method="GET" version="1.1"></http>
-      </request>
+      <transaction name="friends">
+        <request>
+          <http url="/friends" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
 
     </session>
 
