@@ -30,7 +30,7 @@ number_users_without_friends = 50
 number_users_without_friends.times do
   username = Faker::Internet.user_name
   email = "#{username}@whatsup.com"
-  user = User.new(username: Faker::Internet.user_name, email: email, password: 'awesomepassword')
+  user = User.new(username: username, email: email, password: 'awesomepassword')
   user.save if user.valid?
 end
 
@@ -40,7 +40,7 @@ max_friend_requests_for_or_from_heather = 50
 max_friends_for_heather.times do
   username = Faker::Internet.user_name
   email = "#{username}@whatsup.com"
-  new_user = User.new(username: Faker::Internet.user_name, email: email, password: 'awesomepassword')
+  new_user = User.new(username: username, email: email, password: 'awesomepassword')
 
   if new_user.valid?
     new_user.save
@@ -57,7 +57,7 @@ end
 max_friend_requests_for_or_from_heather.times do
   username = Faker::Internet.user_name
   email = "#{username}@whatsup.com"
-  new_user = User.new(username: Faker::Internet.user_name, email: email, password: 'awesomepassword')
+  new_user = User.new(username: username, email: email, password: 'awesomepassword')
 
   if new_user.valid?
     new_user.save
