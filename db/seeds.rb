@@ -70,3 +70,26 @@ max_friend_requests_for_or_from_heather.times do
     end
   end
 end
+
+number_quizzes = 50
+number_questions = 10
+
+number_quizzes.times do
+  title = Faker::Lorem.words
+  description = Faker::Lorem.sentences
+  #author = Quiz.find(Random.rand(number_users_without_friends))
+  new_quiz = Quiz.create(title: title, description: description, author: Faker::Internet.user_name) #Whatch out! Author is just a random name!
+
+  number_questions do
+    question = Faker::Lorem.sentence
+    answer1 = Faker::Lorem.word
+    answer2 = Faker::Lorem.word
+    answer3 = Faker::Lorem.word
+    answer4 = Faker::Lorem.word
+    correct_answer = Random.rand(1..4)
+
+    new_question = Question.create(question: question, answer1: answer1, answer2: answer2, answer3: answer3, answer4: answer4, correct_answer: correct_answer, quiz_id: new_quiz.id)
+  end
+end
+
+
