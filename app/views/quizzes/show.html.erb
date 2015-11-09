@@ -14,7 +14,7 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @quiz.author %>
+  <%= @author_username %>
 </p>
 
 <p>
@@ -32,7 +32,6 @@
       <th>Answer2</th>
       <th>Answer3</th>
       <th>Answer4</th>
-      <th>Quiz_id</th>
       <th>Correct_answer</th>
       <th></th>
       <th></th>
@@ -48,7 +47,6 @@
           <td><%= question.answer2 %></td>
           <td><%= question.answer3 %></td>
           <td><%= question.answer4 %></td>
-          <td><%= question.quiz_id %></td>
           <td><%= question.correct_answer %></td>
           <td><%= link_to 'Show', question %></td>
           <td><%= link_to 'Edit', edit_question_path(question) %></td>

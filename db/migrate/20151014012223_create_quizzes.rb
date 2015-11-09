@@ -3,7 +3,7 @@ class CreateQuizzes < ActiveRecord::Migration
     create_table :quizzes do |t|
       t.string :title
       t.text :description
-      t.string :author
+      t.integer :author
       t.string :date
 
       t.timestamps

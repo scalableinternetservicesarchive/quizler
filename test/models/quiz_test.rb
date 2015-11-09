@@ -17,24 +17,25 @@ class QuizTest < ActiveSupport::TestCase
   #   assert true
   # end
   test 'a quiz should have a title, description and author' do
-    quiz = Quiz.new(title: 'Title', description: 'Description', author: 'user', )
+
+    quiz = Quiz.new(title: 'Title', description: 'Description', author: 1 )
     assert quiz.valid?
 
-    quiz = Quiz.new(title: '', description: 'Description', author: 'user', )
+    quiz = Quiz.new(title: '', description: 'Description', author: 1 )
     assert !quiz.valid?
     assert_equal ['Title can\'t be blank'], quiz.errors.full_messages
 
-    quiz = Quiz.new(title: 'Title', description: '', author: 'user', )
+    quiz = Quiz.new(title: 'Title', description: '', author: 1 )
     assert !quiz.valid?
     assert_equal ['Description can\'t be blank'], quiz.errors.full_messages
 
-    quiz = Quiz.new(title: 'Title', description: 'Description', author: '', )
+    quiz = Quiz.new(title: 'Title', description: 'Description', author: '' )
     assert !quiz.valid?
     assert_equal ['Author can\'t be blank'], quiz.errors.full_messages
   end
 
   test 'if a quiz is destroyed, a question should be destroyed' do
-    quiz = Quiz.new(id: 1, title: 'Title', description: 'Description', author: 'user', )
+    quiz = Quiz.new(id: 1, title: 'Title', description: 'Description', author: 1 )
     question = Question.new(question: "Q", answer1: "1", answer2: "2", correct_answer: 1, quiz_id: 1)
     quiz.questions << question
     assert_difference 'Question.count', -1, "A question should be deleted" do

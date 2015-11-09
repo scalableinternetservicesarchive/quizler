@@ -11,8 +11,8 @@ User.create!(username: 'Jeff', email: 'jeff@whatever.com', password: 'awesomepas
 User.create!(username: 'Laura', email: 'laura@whatever.com', password: 'awesomepassword')
 User.create!(username: 'Steve', email: 'steve@whatever.com', password: 'awesomepassword')
 
-Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author: 'Heather')
-Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author: 'Jeff')
+Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author: '1')
+Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author: '2')
 
 Question.create!(question: 'Where is David Beckham from?', answer1: 'Spain', answer2: 'England', answer3: 'Norway', answer4: 'France', quiz_id: 1, correct_answer: 2)
 Question.create!(question: 'In which league are Arsenal playing?', answer1: 'Premier League', answer2: 'La Liga', quiz_id: 1, correct_answer: 1)
@@ -76,7 +76,7 @@ number_questions = 10
 number_quizzes.times do |i|
   title = Faker::Lorem.sentence
   description = Faker::Lorem.sentence
-  author = User.find(Random.rand(1..number_users_without_friends)).username
+  author = Random.rand(1..number_users_without_friends)
   #new_quiz = Quiz.create(title: title, description: description, author: author)
   Quiz.connection.execute "INSERT INTO quizzes (title, description, author) VALUES ('#{title}', '#{description}', '#{author}')"
 

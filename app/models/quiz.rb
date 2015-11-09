@@ -5,7 +5,7 @@
 #  id          :integer          not null, primary key
 #  title       :string(255)
 #  description :text
-#  author      :string(255)
+#  author      :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
