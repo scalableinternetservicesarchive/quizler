@@ -15,11 +15,11 @@
 one:
   title: MyString
   description: MyText
-  author: MyString
+  author: 1
   id: 1
 
 two:
   title: MyString
   description: MyText
-  author: MyString
+  author: 1
   id: 2

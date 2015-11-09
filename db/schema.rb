@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20151102191139) do
   create_table "quizzes", force: true do |t|
     t.string   "title"
     t.text     "description"
-    t.string   "author"
+    t.integer  "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

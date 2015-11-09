@@ -10,12 +10,13 @@ class QuizzesController < ApplicationController
   # GET /quizzes/1
   # GET /quizzes/1.json
   def show
+    @author_username = User.find(@quiz.author).username
   end
 
   # GET /quizzes/new
   def new
     @quiz = Quiz.new
-    @quiz.author = current_user.username
+    @quiz.author = current_user.id
   end
 
   # GET /quizzes/1/edit
