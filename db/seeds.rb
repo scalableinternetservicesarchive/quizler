@@ -22,10 +22,9 @@ Question.create!(question: 'What do the players kick?', answer1: 'Girls', answer
 Question.create!(question: 'Where can you buy a beer?', answer1: 'At the laundry', answer2: 'At a bar', answer3: 'In the kindergarden', quiz_id: 2, correct_answer: 2)
 Question.create!(question: 'Which is NOT a beer?', answer1: 'Duff', answer2: 'Corona', answer3: 'Quizler', answer4: 'Heineken', quiz_id: 2, correct_answer: 3)
 
-
 # Create friends and friend requests to/from heather
 
-number_users_without_friends = 50
+number_users_without_friends = 10
 
 number_users_without_friends.times do
   username = Faker::Internet.user_name
@@ -34,8 +33,8 @@ number_users_without_friends.times do
   user.save if user.valid?
 end
 
-max_friends_for_heather = 100
-max_friend_requests_for_or_from_heather = 50
+max_friends_for_heather = 10
+max_friend_requests_for_or_from_heather = 5
 
 max_friends_for_heather.times do
   username = Faker::Internet.user_name
@@ -71,16 +70,17 @@ max_friend_requests_for_or_from_heather.times do
   end
 end
 
-number_quizzes = 50
+number_quizzes = 1000
 number_questions = 10
 
-number_quizzes.times do
-  title = Faker::Lorem.words
-  description = Faker::Lorem.sentences
-  #author = Quiz.find(Random.rand(number_users_without_friends))
-  new_quiz = Quiz.create(title: title, description: description, author: Faker::Internet.user_name) #Whatch out! Author is just a random name!
+number_quizzes.times do |i|
+  title = Faker::Lorem.sentence
+  description = Faker::Lorem.sentence
+  author = User.find(Random.rand(1..number_users_without_friends)).username
+  #new_quiz = Quiz.create(title: title, description: description, author: author)
+  Quiz.connection.execute "INSERT INTO quizzes (title, description, author) VALUES ('#{title}', '#{description}', '#{author}')"
 
-  number_questions do
+  number_questions.times do
     question = Faker::Lorem.sentence
     answer1 = Faker::Lorem.word
     answer2 = Faker::Lorem.word
@@ -88,7 +88,7 @@ number_quizzes.times do
     answer4 = Faker::Lorem.word
     correct_answer = Random.rand(1..4)
 
-    new_question = Question.create(question: question, answer1: answer1, answer2: answer2, answer3: answer3, answer4: answer4, correct_answer: correct_answer, quiz_id: new_quiz.id)
+    Question.connection.execute "INSERT INTO questions (question, answer1, answer2, answer3, answer4, correct_answer, quiz_id) VALUES ('#{question}', '#{answer1}', '#{answer2}', '#{answer3}', '#{answer4}', #{correct_answer}, #{i + 1})"
   end
 end
 
