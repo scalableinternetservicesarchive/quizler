@@ -2,7 +2,6 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
-#
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
@@ -70,25 +69,32 @@ max_friend_requests_for_or_from_heather.times do
   end
 end
 
-number_quizzes = 1000
-number_questions = 10
 
-number_quizzes.times do |i|
-  title = Faker::Lorem.sentence
-  description = Faker::Lorem.sentence
-  author = Random.rand(1..number_users_without_friends)
-  #new_quiz = Quiz.create(title: title, description: description, author: author)
-  Quiz.connection.execute "INSERT INTO quizzes (title, description, author) VALUES ('#{title}', '#{description}', '#{author}')"
+number_quizzes = 10000
+number_questions = 8
 
-  number_questions.times do
-    question = Faker::Lorem.sentence
-    answer1 = Faker::Lorem.word
-    answer2 = Faker::Lorem.word
-    answer3 = Faker::Lorem.word
-    answer4 = Faker::Lorem.word
-    correct_answer = Random.rand(1..4)
+Quiz.transaction do
+  number_quizzes.times do |i|
+    sentences = Faker::Lorem.sentences(2)
+    title = sentences[0]
+    description = sentences[1]
+    author = Random.rand(1..number_users_without_friends)
+    Quiz.connection.execute "INSERT INTO quizzes (title, description, author) VALUES ('#{title}', '#{description}', '#{author}')"
 
-    Question.connection.execute "INSERT INTO questions (question, answer1, answer2, answer3, answer4, correct_answer, quiz_id) VALUES ('#{question}', '#{answer1}', '#{answer2}', '#{answer3}', '#{answer4}', #{correct_answer}, #{i + 1})"
+    Question.transaction do
+      number_questions.times do
+        answers = Faker::Lorem.words(8)
+
+        question = answers[4] + " " + answers[5]  + " " + answers[6] + " " + answers[7] + "?"
+        answer1 = answers[0]
+        answer2 = answers[1]
+        answer3 = answers[2]
+        answer4 = answers[3]
+        correct_answer = Random.rand(1..4)
+
+        Question.connection.execute "INSERT INTO questions (question, answer1, answer2, answer3, answer4, correct_answer, quiz_id) VALUES ('#{question}', '#{answer1}', '#{answer2}', '#{answer3}', '#{answer4}', #{correct_answer}, #{i + 1})"
+      end
+    end
   end
 end
 
