@@ -60,6 +60,8 @@ Quizler::Application.routes.draw do
   root to: 'dashboard#index'
 
   devise_for :users, controllers: { registrations: 'users/registrations' }
+  
+  get 'quizzes/browse', to: 'quizzes#browse', as: 'quizzes_browse'
   resources :quizzes
   resources :questions
   #resources :one_player_game_flow
@@ -86,6 +88,7 @@ Quizler::Application.routes.draw do
   get 'one_player_game_flow/score'
 
   get 'dashboard' => 'dashboard#fetch_questions'
+
 
 
 end
