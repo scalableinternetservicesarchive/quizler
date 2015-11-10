@@ -82,15 +82,16 @@ Friendship.transaction do
       # First remaining friendships for a user_1 are friend requests
       if i < first_included_friend_id + max_received_friend_requests_per_user
         created_at = Time.now.strftime('%Y-%m-%d 00:00:00')
-        accepted_at = 'NULL'
+        accepted_at = nil
       else
         created_at = Faker::Date.between('01/01/2013', Date.today.to_s).strftime('%Y-%m-%d 00:00:00')
-        accepted_at = "'#{created_at}'"
+        accepted_at = created_at
       end
 
       user_id, friend_id = direction_of_friendship(user_1, user_2, friendship_id, accepted_at)
+      accepted_at_str = accepted_at.nil? ? 'NULL' : "'#{created_at}'"
 
-      insert_friendships << "('#{user_id}', '#{friend_id}', #{accepted_at}, '#{created_at}', '#{created_at}')"
+      insert_friendships << "('#{user_id}', '#{friend_id}', #{accepted_at_str}, '#{created_at}', '#{created_at}')"
       friendship_id += 1
 
       if insert_friendships.count > friendships_per_commit
