@@ -60,3 +60,5 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 
 gem 'faker'
+
+gem 'will_paginate'
