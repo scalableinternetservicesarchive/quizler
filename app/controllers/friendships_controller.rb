@@ -1,12 +1,15 @@
 class FriendshipsController < ApplicationController
+  require 'will_paginate/array'
+
 
   def search
-
   end
 
   def fetch_users
     username = params[:username]
-    @users = User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id).to_a
+    @users_sql = User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id).to_a
+    @users = @users_sql.paginate(:page => params[:page], :per_page => 30)
+
 
     respond_to do |format|
       format.js {}

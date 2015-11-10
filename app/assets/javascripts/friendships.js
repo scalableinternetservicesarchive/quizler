@@ -77,4 +77,16 @@ $(function() {
             error: errorCallback($confirmBtn)
         });
     });
+    $(function() {
+        $(".pagination a").live("click", function() {
+            var pagination = $(this).parent();
+            $(".pagination").html("Page is loading...");
+            $.get(this.href, function(data) {
+                $('#show').append(data);
+                alert('Load was performed.');
+                pagination.hide();
+            }, 'json');
+            return false
+        });
+    });
 });
