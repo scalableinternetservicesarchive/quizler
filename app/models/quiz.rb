@@ -15,6 +15,5 @@ class Quiz < ActiveRecord::Base
 	validates :title, :description, :author, presence: true
 	has_many :questions, dependent: :destroy
 	has_many :highscores, dependent: :destroy
-	#self.per_page = 10
 
 end

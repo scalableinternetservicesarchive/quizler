@@ -8,11 +8,15 @@
     <br>
     <%= text_field_tag :quiz_id, params[:input_quiz_id], placeholder: "Enter ID" %>
     <button type="submit">Find</button>
+
 <% end %>
+
+ <br>
+    <%= link_to 'Browse Quizzes', quizzes_browse_path %>
 
 <% if user_signed_in? %>
     <br>
-    <%= link_to 'Quizzes', quizzes_path %>
+    <%= link_to 'My Quizzes', quizzes_path %>
     <br>
     <%= link_to 'Find friends', search_friends_path %>
     <br>

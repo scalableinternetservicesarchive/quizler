@@ -11,7 +11,6 @@
       <th>Created at</th>
       <th></th>
       <th></th>
-      <th></th>
     </tr>
   </thead>
 
@@ -23,8 +22,7 @@
         <td><%= User.find(quiz.author).username %></td>
         <td><%= quiz.created_at %></td>
         <td><%= link_to 'Show', quiz %></td>
-        <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
-        <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Play',  one_player_game_flow_ready_path(:quiz_id => quiz)%></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Quiz', new_quiz_path(@quiz) %> | <%= link_to 'Main View', root_path() %>
+<%= link_to 'Main View', root_path() %>
