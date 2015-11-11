@@ -71,6 +71,10 @@ class QuizzesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_quiz
       @quiz = Quiz.find(params[:id])
+      if @quiz.author != current_user
+        flash[:alert] = 'You\'re not the author of this quiz and not allowed to access it.'
+        redirect_to quizzes_browse_path
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
