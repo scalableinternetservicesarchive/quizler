@@ -157,4 +157,18 @@ class UserTest < ActiveSupport::TestCase
     assert_equal [user_2, user_4, user_5, user_6], User.search_user('s', user_1).to_a
     assert_equal [user_1, user_4], User.search_user('franco', user_2).to_a
   end
+
+  test 'a user has many quizzes' do
+    User.delete_all
+    Quiz.delete_all
+    user = User.create!(username: 'francois', email: 'francois@ucsb.edu', password: 'password')
+    user_2 = User.create!(username: 'francois2', email: 'francois2@ucsb.edu', password: 'password')
+    quiz_1 = Quiz.create!(title: 'Title', description: 'Description', author: user)
+    quiz_2 = Quiz.create!(title: 'Title2', description: 'Description2', author: user)
+    quiz_3 = Quiz.create!(title: 'Title3', description: 'Description3', author: user_2)
+
+    user.reload
+    assert_equal [quiz_1, quiz_2], user.quizzes.to_a
+    assert_equal [quiz_3], user_2.quizzes.to_a
+  end
 end

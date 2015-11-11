@@ -20,7 +20,7 @@
       <tr>
         <td><%= quiz.title %></td>
         <td><%= quiz.description %></td>
-        <td><%= User.find(quiz.author).username %></td>
+        <td><%= quiz.author.username %></td>
         <td><%= quiz.created_at %></td>
         <td><%= link_to 'Show', quiz %></td>
         <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>

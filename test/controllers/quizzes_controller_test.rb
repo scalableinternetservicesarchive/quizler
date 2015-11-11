@@ -20,7 +20,7 @@ class QuizzesControllerTest < ActionController::TestCase
 
   test "should create quiz" do
     assert_difference('Quiz.count') do
-      post :create, quiz: {  title: @quiz. title, author: @quiz.author, description: @quiz.description }
+      post :create, quiz: { title: @quiz. title, author_id: @quiz.author_id, description: @quiz.description }
     end
 
     assert_redirected_to quiz_path(assigns(:quiz))

@@ -5,7 +5,7 @@
 #  id          :integer          not null, primary key
 #  title       :string(255)
 #  description :text
-#  author      :string(255)
+#  author_id   :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
@@ -15,11 +15,11 @@
 one:
   title: MyString
   description: MyText
-  author: 1
+  author_id: 1
   id: 1
 
 two:
   title: MyString
   description: MyText
-  author: 1
+  author_id: 1
   id: 2
