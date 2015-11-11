@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create!(username: 'Heather', email: 'heather@whatever.com', password: 'awesomepassword')
+heather = User.create!(username: 'Heather', email: 'heather@whatever.com', password: 'awesomepassword')
 
-Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author: '1')
-Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author: '2')
+Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author_id: heather.id)
+Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author_id: heather.id)
 
 Question.create!(question: 'Where is David Beckham from?', answer1: 'Spain', answer2: 'England', answer3: 'Norway', answer4: 'France', quiz_id: 1, correct_answer: 2)
 Question.create!(question: 'In which league are Arsenal playing?', answer1: 'Premier League', answer2: 'La Liga', quiz_id: 1, correct_answer: 1)
