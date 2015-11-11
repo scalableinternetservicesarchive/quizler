@@ -6,37 +6,36 @@ class FriendshipsControllerTest < ActionController::TestCase
     @current_user = sign_in_as_user
   end
 
-  test 'search_user action should work' do
+  test 'search action should work' do
     get :search
+
     assert_response :success
+    assert_nil assigns(:username)
+    assert_nil assigns(:users)
   end
 
-  test 'fetch_users when no username typed in' do
+  test 'search when no username typed in' do
     user_1 = User.create!(username: 'francois', email: 'user1@ucsb.edu', password: 'password')
     user_2 = User.create!(username: 'Heather', email: 'user2@ucsb.edu', password: 'password')
     user_3 = User.create!(username: 'Hellofranck', email: 'user3@ucsb.edu', password: 'password')
 
-    xhr :get, :fetch_users, {username: ''}
+    get :search, {username: ''}
 
     assert_response :success
+    assert_equal '', assigns(:username)
     assert_equal [user_1, user_2, user_3], assigns(:users)
-
-    # expected_response_body = '$(".js-fetched-users").html("    francois - user1@ucsb.edu\n    <button class=\"js-add-friend-btn\" data-id=\"2\" data-path=\"/friends/create\" name=\"button\" type=\"submit\">Add Friend<\/button>\n    <br>\n    Heather - user2@ucsb.edu\n    <button class=\"js-add-friend-btn\" data-id=\"3\" data-path=\"/friends/create\" name=\"button\" type=\"submit\">Add Friend<\/button>\n    <br>\n    Hellofranck - user3@ucsb.edu\n    <button class=\"js-add-friend-btn\" data-id=\"4\" data-path=\"/friends/create\" name=\"button\" type=\"submit\">Add Friend<\/button>\n    <br>\n");'
-    # assert_equal expected_response_body, response.body
   end
 
-  test 'fetch_users when looking for usernames having same substring' do
+  test 'search when looking for usernames having same substring' do
     user_1 = User.create!(username: 'francois', email: 'user1@ucsb.edu', password: 'password')
     user_2 = User.create!(username: 'Heather', email: 'user2@ucsb.edu', password: 'password')
     user_3 = User.create!(username: 'Hellofranck', email: 'user3@ucsb.edu', password: 'password')
 
-    xhr :get, :fetch_users, {username: 'fran'}
+    get :search, {username: 'fran'}
 
     assert_response :success
+    assert_equal 'fran', assigns(:username)
     assert_equal [user_1, user_3], assigns(:users)
-
-    # expected_response_body = '$(".js-fetched-users").html("    francois - user1@ucsb.edu\n    <button class=\"js-add-friend-btn\" data-id=\"2\" data-path=\"/friends/create\" name=\"button\" type=\"submit\">Add Friend<\/button>\n    <br>\n    Hellofranck - user3@ucsb.edu\n    <button class=\"js-add-friend-btn\" data-id=\"4\" data-path=\"/friends/create\" name=\"button\" type=\"submit\">Add Friend<\/button>\n    <br>\n");'
-    # assert_equal expected_response_body, response.body
   end
 
   test 'create when potential new friend is not found' do

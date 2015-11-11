@@ -2,11 +2,11 @@
     <h1>Search user</h1>
 <% end %>
 
-<%= form_tag({controller: 'friendships', action: 'fetch_users'}, method: :get, remote: true) do %>
-	<%= text_field_tag :username %>
+<%= form_tag({controller: 'friendships', action: 'search'}, method: :get) do %>
+	<%= text_field_tag :username, @username %>
 	<%= submit_tag 'Search' %>
 <% end %>
 
-<div class="js-fetched-users">
-
-</div>
+<% if @users.present? %>
+    <%= render 'search_users_results' %>
+<% end %>

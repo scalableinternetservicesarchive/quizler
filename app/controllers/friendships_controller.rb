@@ -1,15 +1,10 @@
 class FriendshipsController < ApplicationController
 
   def search
+    @username = params[:username]
 
-  end
-
-  def fetch_users
-    username = params[:username]
-    @users = User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id).to_a
-
-    respond_to do |format|
-      format.js {}
+    if @username
+      @users = User.search_user(@username, current_user).to_a
     end
   end
 
