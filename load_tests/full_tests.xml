@@ -53,7 +53,7 @@
 
 
 
-    <session name="create-quiz" probability="20" type="ts_http">
+    <session name="create-quiz" probability="15" type="ts_http">
       <request>
         <http url="/" version="1.1" method='GET'></http>
       </request>
@@ -187,7 +187,7 @@
 
 
 
-    <session name="play-game" probability="50" type="ts_http">
+    <session name="play-game" probability="40" type="ts_http">
       <request>
         <http url="/" version="1.1" method='GET'></http>
       </request>
@@ -320,9 +320,57 @@
 
 
 
+    <session name="browse-quizzes" probability="20" type="ts_http">
+      <request>
+        <http url="/" version="1.1" method='GET'></http>
+      </request>
+
+      <thinktime value="5" random="true"></thinktime>
+
+      <!-- Sign in page -->
+      <request>
+        <dyn_variable name="authenticity_token"></dyn_variable>
+        <http url="/users/sign_in" method="GET" version="1.1"></http>
+      </request>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
+          {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),
+          list_to_binary(http_uri:encode(binary_to_list(Val)))
+        end.">
+        <var name="escaped_authenticity_token" />
+      </setdynvars>
+
+      <thinktime value="12" random="true"></thinktime>
+
+      <!-- User signs in -->
+      <request subst="true">
+        <http url="/users/sign_in"
+              method="POST" version="1.1"
+              contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%"
+              content_type="application/x-www-form-urlencoded"></http>
+      </request>
+
+      <!-- redirect to main page -->
+      <request>
+        <http url="/" version="1.1" method='GET'></http>
+      </request>
+
+      <thinktime value="2" random="true"></thinktime>
+
+      <!-- Visit the quizzes page -->
+      <transaction name="browse_quizzes_page_1">
+        <request>
+          <http url="/quizzes/browse" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
+
+    </session>
 
 
-    <session name="search-all-friends" probability="20" type="ts_http">
+
+
+
+    <session name="search-all-friends" probability="15" type="ts_http">
 
       <!-- Go to main page -->
       <request>
@@ -363,11 +411,11 @@
 
       <!-- Go to Search user page -->
       <request>
-        <dyn_variable name="meta_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
+        <!--<dyn_variable name="meta_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>-->
         <http url="/friends/search" method="GET" version="1.1"></http>
       </request>
 
-      <!-- <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
+      <!-- <setdyvars sourcetype="eval" code="fun({Pid,DynVars})->
           {ok, Val} = ts_dynvars:lookup(meta_token, DynVars),
           list_to_binary(http_uri:encode(binary_to_list(Val)))
         end.">
@@ -379,13 +427,13 @@
       <!-- Search for all users -->
       <transaction name="search_all_users">
         <request>
-          <http url="/friends/fetch_users?username=" method="GET" version="1.1"></http>
+          <http url="/friends/search?username=" method="GET" version="1.1"></http>
         </request>
       </transaction>
 
       <transaction name="search_he_users">
         <request>
-          <http url="/friends/fetch_users?username=he" method="GET" version="1.1"></http>
+          <http url="/friends/search?username=he" method="GET" version="1.1"></http>
         </request>
       </transaction>
 
