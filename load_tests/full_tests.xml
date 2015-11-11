@@ -34,7 +34,7 @@
     </arrivalphase>  
     <arrivalphase phase="7" duration="30" unit="second">
       <users arrivalrate="32" unit="second"></users>
-    </arrivalphase>  
+    </arrivalphase>
   </load>
 
   <options>
@@ -355,11 +355,15 @@
       <thinktime value="5" random="true"></thinktime>
 
       <!-- Search for all users -->
-      <transaction name="search_users">
+      <transaction name="search_all_users">
         <request>
-          <http url="/friends/fetch_users?username=" method="GET" version="1.1">
-            <http_header name="Accept" value="application/javascript"/>
-          </http>
+          <http url="/friends/fetch_users?username=" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
+
+      <transaction name="search_he_users">
+        <request>
+          <http url="/friends/fetch_users?username=he" method="GET" version="1.1"></http>
         </request>
       </transaction>
 
