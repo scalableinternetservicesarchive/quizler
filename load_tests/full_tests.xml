@@ -34,7 +34,7 @@
     </arrivalphase>  
     <arrivalphase phase="7" duration="30" unit="second">
       <users arrivalrate="32" unit="second"></users>
-    </arrivalphase>
+    </arrivalphase>  
   </load>
 
   <options>
@@ -91,9 +91,11 @@
       <thinktime value="2" random="true"></thinktime>
 
       <!-- Visit the quizzes page -->
-      <request>
-        <http url="/quizzes" method="GET" version="1.1"></http>
-      </request>
+      <transaction name="quizzes_page_INDEX">
+        <request>
+          <http url="/quizzes" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
 
       <thinktime value="2" random="true"></thinktime>
 
@@ -119,13 +121,15 @@
         <var name="quiz_description_string" />
       </setdynvars>
 
-      <request subst="true">
-        <dyn_variable name="created_quiz_id" re="[Ll]ocation: http://.*/quizzes/(.*)\r"/>
-        <http url="/quizzes"
+      <transaction name="quiz_new_POST">
+        <request subst="true">
+          <dyn_variable name="created_quiz_id" re="[Ll]ocation: http://.*/quizzes/(.*)\r"/>
+          <http url="/quizzes"
               method="POST" version="1.1"
               contents="quiz%5Btitle%5D=%%_quiz_title_string%%&amp;quiz%5Bdescription%5D=%%_quiz_description_string%%&amp;quiz%5Bauthor%5D=%%_quiz_author%%&amp;authenticity_token=%%_escaped_authenticity_token%%"
               content_type="application/x-www-form-urlencoded"></http>
-      </request>
+        </request>
+      </transaction>
 
       <!-- redirect to create/edit/delete questions of quiz page -->
       <request subst="true">
@@ -157,17 +161,21 @@
             <var name="question_answer4_string" />
           </setdynvars>
 
-          <request subst="true">
-            <http url="/questions"
+          <transaction name="question_new_POST">
+            <request subst="true">
+              <http url="/questions"
                   method="POST" version="1.1"
                   contents="question%5Bquiz_id%5D=%%_created_quiz_id%%&amp;question%5Bquestion%5D=%%_question_string%%&amp;question%5Banswer1%5D=%%_question_answer1_string%%&amp;question%5Banswer2%5D=%%_question_answer2_string%%&amp;question%5Banswer3%5D=%%_question_answer3_string%%&amp;question%5Banswer4%5D=%%_question_answer4_string%%&amp;question%5Bcorrect_answer%5D=2&amp;authenticity_token=%%_escaped_authenticity_token%%"
                   content_type="application/x-www-form-urlencoded"></http>
-          </request>
+            </request>
+          </transaction>
 
           <!-- redirect to create/edit/delete questions of quiz page -->
-          <request subst="true">
-            <http url="/quizzes/%%_created_quiz_id%%" method="GET" version="1.1"></http>
-          </request>
+          <transaction name="quiz_questions_SHOW">
+            <request subst="true">
+              <http url="/quizzes/%%_created_quiz_id%%" method="GET" version="1.1"></http>
+            </request>
+          </transaction>
 
       </for>
     </session>
@@ -187,10 +195,12 @@
       <thinktime value="5" random="true"></thinktime>
 
       <!-- Sign in page -->
-      <request>
-        <dyn_variable name="authenticity_token"></dyn_variable>
-        <http url="/users/sign_in" method="GET" version="1.1"></http>
-      </request>
+      <transaction name="sign_in_SHOW">
+        <request>
+          <dyn_variable name="authenticity_token"></dyn_variable>
+          <http url="/users/sign_in" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
 
       <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
           {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),
@@ -202,39 +212,49 @@
       <thinktime value="12" random="true"></thinktime>
 
       <!-- User signs in -->
-      <request subst="true">
-        <http url="/users/sign_in"
+      <transaction name="sign_in_POST">
+        <request subst="true">
+          <http url="/users/sign_in"
               method="POST" version="1.1"
               contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%"
               content_type="application/x-www-form-urlencoded"></http>
-      </request>
+        </request>
+      </transaction>
 
       <!-- redirect to main page -->
-      <request>
-        <http url="/" version="1.1" method='GET'></http>
-      </request>
+      <transaction name="index">
+        <request>
+          <http url="/" version="1.1" method='GET'></http>
+        </request>
+      </transaction>
 
       <thinktime value="5" random="true"></thinktime>
 
       <!-- Join a quiz by ID (quiz number 1) -->
-      <request>
-        <http url="/one_player_game_flow/ready?quiz_id=1" version="1.1" method='GET'></http>
-      </request>
+      <transaction name="play_game__ready_page">
+        <request>
+          <http url="/one_player_game_flow/ready?quiz_id=1" version="1.1" method='GET'></http>
+        </request>
+      </transaction>
 
       <thinktime value="2" random="true"></thinktime>
 
 
       <!-- Accept to play the quiz -->
-      <request>
-        <http url="/one_player_game_flow/question_option" version="1.1" method='GET'></http>
-      </request>
+      <transaction name="play_game__1st_question">
+        <request>
+          <http url="/one_player_game_flow/question_option" version="1.1" method='GET'></http>
+        </request>
+      </transaction>
 
       <thinktime value="7" random="true"></thinktime>
 
       <!-- Answer 1st question by selecting 1st answer-->
-      <request>
-        <http url="/one_player_game_flow/score.1" version="1.1" method='GET'></http>
-      </request>
+      <transaction name="play_game__answer_to_question">
+        <request>
+          <http url="/one_player_game_flow/score.1" version="1.1" method='GET'></http>
+        </request>
+      </transaction>
 
       <thinktime value="2" random="true"></thinktime>
 
@@ -281,9 +301,11 @@
       <thinktime value="2" random="true"></thinktime>
 
       <!-- Click on See leaderboard -->
-      <request>
-        <http url="/one_player_game_flow/finale" version="1.1" method='GET'></http>
-      </request>
+      <transaction name="play_game__leaderboard">
+        <request>
+          <http url="/one_player_game_flow/finale" version="1.1" method='GET'></http>
+        </request>
+      </transaction>
 
       <thinktime value="5" random="true"></thinktime>
 
