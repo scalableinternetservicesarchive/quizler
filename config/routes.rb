@@ -69,7 +69,6 @@ Quizler::Application.routes.draw do
   resources :friends, controller: 'friendships', only: [:index, :create] do
     collection do
       get 'search'
-      get 'fetch_users'
       get 'friendship_requests'
       post 'accept_friendship'
     end

@@ -63,4 +63,8 @@ class User < ActiveRecord::Base
     friendship = Friendship.get_friendship(self, other_user)
     friendship.nil? ? false : !friendship.accepted_at.nil?
   end
+
+  def self.search_user(username, current_user)
+    User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id)
+  end
 end
