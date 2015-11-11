@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: highscores
+#
+#  id      :integer          not null, primary key
+#  score   :integer
+#  user_id :integer          not null
+#  quiz_id :integer          not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:

@@ -5,7 +5,7 @@
 #  id          :integer          not null, primary key
 #  title       :string(255)
 #  description :text
-#  author      :integer
+#  author_id   :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
@@ -15,5 +15,5 @@ class Quiz < ActiveRecord::Base
 	validates :title, :description, :author, presence: true
 	has_many :questions, dependent: :destroy
 	has_many :highscores, dependent: :destroy
-
+	belongs_to :author, class_name: 'User'
 end

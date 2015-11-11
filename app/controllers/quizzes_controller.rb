@@ -4,7 +4,7 @@ class QuizzesController < ApplicationController
   # GET /quizzes
   # GET /quizzes.json
   def index
-    @quizzes = Quiz.where(['author = ?', current_user.id]).paginate(:page => params[:page], :per_page => 30)
+    @quizzes = Quiz.where(author: current_user).paginate(:page => params[:page], :per_page => 30)
   end
 
   def browse
@@ -14,13 +14,13 @@ class QuizzesController < ApplicationController
   # GET /quizzes/1
   # GET /quizzes/1.json
   def show
-    @author_username = User.find(@quiz.author).username
+    @author_username = @quiz.author.username
   end
 
   # GET /quizzes/new
   def new
     @quiz = Quiz.new
-    @quiz.author = current_user.id
+    @quiz.author = current_user
   end
 
   # GET /quizzes/1/edit
@@ -71,10 +71,14 @@ class QuizzesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_quiz
       @quiz = Quiz.find(params[:id])
+      if @quiz.author != current_user
+        flash[:alert] = 'You\'re not the author of this quiz and not allowed to access it.'
+        redirect_to quizzes_browse_path
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quiz_params
-      params.require(:quiz).permit(:title, :description, :author, :date)
+      params.require(:quiz).permit(:title, :description, :author_id, :date)
     end
 end
