@@ -109,8 +109,8 @@ Quiz.transaction do
     sentences = Faker::Lorem.sentences(2)
     title = sentences[0]
     description = sentences[1]
-    author = Random.rand(1..number_users)
-    Quiz.connection.execute "INSERT INTO quizzes (title, description, author) VALUES ('#{title}', '#{description}', '#{author}')"
+    author_id = Random.rand(1..number_users)
+    Quiz.connection.execute "INSERT INTO quizzes (title, description, author_id) VALUES ('#{title}', '#{description}', '#{author_id}')"
 
     Question.transaction do
       number_questions.times do
