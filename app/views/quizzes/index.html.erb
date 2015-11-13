@@ -7,7 +7,6 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <th>Author</th>
       <th>Created at</th>
       <th></th>
       <th></th>
@@ -20,7 +19,6 @@
       <tr>
         <td><%= quiz.title %></td>
         <td><%= quiz.description %></td>
-        <td><%= quiz.author.username %></td>
         <td><%= quiz.created_at %></td>
         <td><%= link_to 'Show', quiz %></td>
         <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
