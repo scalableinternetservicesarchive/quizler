@@ -4,6 +4,7 @@ module CurrentQuiz
 	private
 	def set_quiz(quiz)
 		@current_quiz = quiz
+		session[:current_quiz_title] = @current_quiz.title
 		session[:current_quiz_id] = @current_quiz.id
 		session[:next_question_index] = -1
 		session[:total_score] = 0
@@ -12,27 +13,28 @@ module CurrentQuiz
 	end
 
 	private
-	def current_quiz
-		Quiz.find(session[:current_quiz_id])
+	def current_quiz_id
+		session[:current_quiz_id]
+	end
+
+	def current_quiz_title
+		session[:current_quiz_title]
 	end
 
 	private
-	def get_next_question
-		@questions = Quiz.find(session[:current_quiz_id]).questions
+	def get_next_question(questions)
 		session[:next_question_index] = session[:next_question_index] +1
-		@current_question = @questions[session[:next_question_index]]
+		@current_question = questions[session[:next_question_index]]
 		@current_question
 	end
 
 	private
-	def current_question
-		@questions = Quiz.find(session[:current_quiz_id]).questions
-		@current_question = @questions[session[:next_question_index]]
-		@current_question
+	def current_question(questions)
+		questions[session[:next_question_index]]
 	end
 
 	def get_questions
-		Quiz.find(session[:current_quiz_id]).questions
+		Question.where(quiz_id: session[:current_quiz_id])
 	end
 
 	def get_question_index
