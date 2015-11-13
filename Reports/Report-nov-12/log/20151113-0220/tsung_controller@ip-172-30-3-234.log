@@ -1,0 +1,38 @@
+
+=INFO REPORT==== 13-Nov-2015::02:20:57 ===
+    ts_config_server:(5:<0.72.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20151113-0220"
+ 
+=INFO REPORT==== 13-Nov-2015::02:20:57 ===
+              ts_mon:(5:<0.54.0>) starting monitor, global 
+
+=INFO REPORT==== 13-Nov-2015::02:20:57 ===
+           ts_config:(5:<0.72.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 13-Nov-2015::02:20:57 ===
+    ts_config_server:(0:<0.72.0>) Error while parsing XML config file: {fatal,
+                                                                        {{error,
+                                                                          {error_missing_element_declaration_in_DTD,
+                                                                           tsung}},
+                                                                         {file,
+                                                                          "simple.xml"},
+                                                                         {line,
+                                                                          1},
+                                                                         {col,
+                                                                          23}}}
+
+=ERROR REPORT==== 13-Nov-2015::02:20:57 ===
+** Generic server ts_config_server terminating 
+** Last message in was {get_monitor_hosts}
+** When Server state == {state,undefined,
+                               "/home/ec2-user/.tsung/log/20151113-0220",0,0,
+                               0,undefined,1,undefined,'ip-172-30-3-234',0,0,
+                               undefined,undefined}
+** Reason for termination == 
+** {{badrecord,config},
+    [{ts_config_server,handle_call,3},
+     {gen_server,handle_msg,5},
+     {proc_lib,init_p_do_apply,3}]}
+
+=INFO REPORT==== 13-Nov-2015::02:20:57 ===
+    ts_config_server:(5:<0.91.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20151113-0220"
+ 
