@@ -1,4 +1,5 @@
 class QuizzesController < ApplicationController
+  skip_before_filter :authenticate_user!, only: :browse
   before_action :set_quiz, only: [:show, :edit, :update, :destroy]
 
   # GET /quizzes
@@ -8,7 +9,7 @@ class QuizzesController < ApplicationController
   end
 
   def browse
-    @quizzes = Quiz.paginate(:page => params[:page], :per_page => 30)
+    @quizzes = Quiz.includes(:author).paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /quizzes/1
