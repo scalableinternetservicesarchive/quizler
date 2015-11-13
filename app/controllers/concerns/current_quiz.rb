@@ -2,9 +2,9 @@ module CurrentQuiz
 	extend ActiveSupport::Concern
 
 	private
-	def set_quiz(quiz_id)
-		@current_quiz = Quiz.find(quiz_id)
-		session[:current_quiz_id] = @current_quiz
+	def set_quiz(quiz)
+		@current_quiz = quiz
+		session[:current_quiz_id] = @current_quiz.id
 		session[:next_question_index] = -1
 		session[:total_score] = 0
 		@question_counter = 0
