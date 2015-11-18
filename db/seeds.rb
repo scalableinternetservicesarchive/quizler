@@ -36,9 +36,7 @@ if User.count < 10 then
 
   insert_users = []
   insert_friendships = []
-
-
-
+  
   User.transaction do
     (2..number_users).each do |i|
       username = Faker::Internet.user_name + '_' + i.to_s
