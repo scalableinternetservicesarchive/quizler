@@ -129,11 +129,6 @@ if User.count < 10 then
 end
 
 
-
-
-
-
-
 # def find_and_set_random_friend_in_hash(user_1, friends_hash, number_users)
 #   friends_hash[user_1] = {} if friends_hash[user_1].nil?
 #
