@@ -1,5 +1,5 @@
 <div>
-  There are <%= pluralize(@users.count, 'result') %> related to "<strong><%= @username %></strong>"
+  There are <%= pluralize(@users_count, 'result') %> related to "<strong><%= @username %></strong>"
 </div>
 <table class="table friendship-table friendship-table--center" align="center">
   <thead>
@@ -9,14 +9,15 @@
   </tr>
   </thead>
   <tbody>
-  <% @users.each do |user| %>
+  <% @users_joined_with_friendships.each do |result| %>
+  <% search_user_result = SearchUserResult.new(current_user, result) %>
       <tr>
-        <th><%= user.username %></th>
-        <td><%= user.email %></td>
-        <td><%= add_friend_button user %></td>
+        <th><%= search_user_result.username %></th>
+        <td><%= search_user_result.email %></td>
+        <td><%= add_friend_button search_user_result %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
 
-<%= will_paginate @users, :param_name => :page %>
+<%= will_paginate @users_joined_with_friendships, :param_name => :page %>

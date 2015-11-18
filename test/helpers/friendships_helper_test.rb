@@ -13,16 +13,25 @@ class FriendshipsHelperTest < ActionView::TestCase
   def test_add_friend_button
     other_user = User.create!(username: 'user1', email: 'user1@ucsb.edu', password: 'password')
 
+    users_joined_with_friendships = User.search_users(@current_user, 'user1')
+    search_user_result = SearchUserResult.new(@current_user, users_joined_with_friendships.first)
+
     expected_result = '<button class="js-add-friend-btn" data-id="2" data-path="/friends" name="button" type="submit">Add Friend</button>'
-    assert_equal expected_result, add_friend_button(other_user)
+    assert_equal expected_result, add_friend_button(search_user_result)
 
     @current_user.friends << other_user
+    users_joined_with_friendships = User.search_users(@current_user, 'user1')
+    search_user_result = SearchUserResult.new(@current_user, users_joined_with_friendships.first)
+
     expected_result = '<button class="js-add-friend-btn" data-id="2" data-path="/friends" disabled="disabled" name="button" type="submit">Friend request sent</button>'
-    assert_equal expected_result, add_friend_button(other_user)
+    assert_equal expected_result, add_friend_button(search_user_result)
 
     @current_user.friendships.last.update_attributes(accepted_at: DateTime.now)
+    users_joined_with_friendships = User.search_users(@current_user, 'user1')
+    search_user_result = SearchUserResult.new(@current_user, users_joined_with_friendships.first)
+
     expected_result = '<button class="js-add-friend-btn" data-id="2" data-path="/friends" disabled="disabled" name="button" type="submit">Friend</button>'
-    assert_equal expected_result, add_friend_button(other_user)
+    assert_equal expected_result, add_friend_button(search_user_result)
   end
 
   def test_number_friend_requests_text
