@@ -5,40 +5,38 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
-heather = User.create!(username: 'Heather', email: 'heather@whatever.com', password: 'awesomepassword')
-
-Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author_id: heather.id)
-Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author_id: heather.id)
-
-Question.create!(question: 'Where is David Beckham from?', answer1: 'Spain', answer2: 'England', answer3: 'Norway', answer4: 'France', quiz_id: 1, correct_answer: 2)
-Question.create!(question: 'In which league are Arsenal playing?', answer1: 'Premier League', answer2: 'La Liga', quiz_id: 1, correct_answer: 1)
-Question.create!(question: 'Who won the World Cup in 2002?', answer1: 'France', answer2: 'Germany', answer3: 'Brazil', quiz_id: 1, correct_answer: 3)
-Question.create!(question: 'What do the players kick?', answer1: 'Girls', answer2: 'Boys', answer3: 'Balls', answer4: 'Nuts', quiz_id: 1, correct_answer: 3)
-
-Question.create!(question: 'Where can you buy a beer?', answer1: 'At the laundry', answer2: 'At a bar', answer3: 'In the kindergarden', quiz_id: 2, correct_answer: 2)
-Question.create!(question: 'Which is NOT a beer?', answer1: 'Duff', answer2: 'Corona', answer3: 'Quizler', answer4: 'Heineken', quiz_id: 2, correct_answer: 3)
-
-
-number_quizzes = 10000
-number_questions = 8
-
-number_users = 10000
-
-max_received_friend_requests_per_user = 2
-max_friends_per_user = 40
-
-users_per_commit = 250
-friendships_per_commit = 250
-
-number_friendships_per_user = max_received_friend_requests_per_user + max_friends_per_user
-
-insert_users = []
-insert_friendships = []
-
 if User.count < 10 then
 
+  heather = User.create!(username: 'Heather', email: 'heather@whatever.com', password: 'awesomepassword')
+
+  Quiz.create!(title: 'Soccer Quiz', description: 'A quiz about soccer', author_id: heather.id)
+  Quiz.create!(title: 'Beer Quiz', description: 'A quiz about beer', author_id: heather.id)
+
+  Question.create!(question: 'Where is David Beckham from?', answer1: 'Spain', answer2: 'England', answer3: 'Norway', answer4: 'France', quiz_id: 1, correct_answer: 2)
+  Question.create!(question: 'In which league are Arsenal playing?', answer1: 'Premier League', answer2: 'La Liga', quiz_id: 1, correct_answer: 1)
+  Question.create!(question: 'Who won the World Cup in 2002?', answer1: 'France', answer2: 'Germany', answer3: 'Brazil', quiz_id: 1, correct_answer: 3)
+  Question.create!(question: 'What do the players kick?', answer1: 'Girls', answer2: 'Boys', answer3: 'Balls', answer4: 'Nuts', quiz_id: 1, correct_answer: 3)
+
+  Question.create!(question: 'Where can you buy a beer?', answer1: 'At the laundry', answer2: 'At a bar', answer3: 'In the kindergarden', quiz_id: 2, correct_answer: 2)
+  Question.create!(question: 'Which is NOT a beer?', answer1: 'Duff', answer2: 'Corona', answer3: 'Quizler', answer4: 'Heineken', quiz_id: 2, correct_answer: 3)
+
+
+  number_quizzes = 10000
+  number_questions = 8
+
+  number_users = 10000
+
+  max_received_friend_requests_per_user = 2
+  max_friends_per_user = 40
+
+  users_per_commit = 250
+  friendships_per_commit = 250
+
+  number_friendships_per_user = max_received_friend_requests_per_user + max_friends_per_user
+
+  insert_users = []
+  insert_friendships = []
+  
   User.transaction do
     (2..number_users).each do |i|
       username = Faker::Internet.user_name + '_' + i.to_s
