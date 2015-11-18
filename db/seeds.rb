@@ -37,98 +37,98 @@ number_friendships_per_user = max_received_friend_requests_per_user + max_friend
 insert_users = []
 insert_friendships = []
 
+  if User.count > 10 then
 
+  User.transaction do
+    (2..number_users).each do |i|
+      username = Faker::Internet.user_name + '_' + i.to_s
+      domain = Faker::Internet.domain_name
+      email = "#{username}@#{domain}"
+      created_at = Time.now.strftime('%Y-%m-%d 00:00:00')
+      encrypted_password ='$2a$10$aNyB6msOBG5yluXKYsXD9ekGYcFxxh0mQbHv4r6L2T7PowE4xcbWS' # password: awesomepassword
 
-User.transaction do
-  (2..number_users).each do |i|
-    username = Faker::Internet.user_name + '_' + i.to_s
-    domain = Faker::Internet.domain_name
-    email = "#{username}@#{domain}"
-    created_at = Time.now.strftime('%Y-%m-%d 00:00:00')
-    encrypted_password ='$2a$10$aNyB6msOBG5yluXKYsXD9ekGYcFxxh0mQbHv4r6L2T7PowE4xcbWS' # password: awesomepassword
+      insert_users << "('#{username}', '#{email}', '#{encrypted_password}', 0, '#{created_at}', '#{created_at}')"
 
-    insert_users << "('#{username}', '#{email}', '#{encrypted_password}', 0, '#{created_at}', '#{created_at}')"
-
-    if i > users_per_commit
-      sql = "INSERT INTO users (`username`, `email`, `encrypted_password`, `sign_in_count`, `created_at`, `updated_at`) VALUES #{insert_users.join(', ')}"
-      User.connection.execute sql
-      insert_users = []
-    end
-  end
-end
-
-
-def direction_of_friendship(user_id, friend_id, friendship_id, accepted_at)
-  if accepted_at.nil?
-    # if friendship not yet accepted, we consider the direction of friendship to be a request for user_id
-    [friend_id, user_id]
-  else
-    # Every other friendships we switch the direction of the friendships (this decision si totally random)
-    friendship_id % 2 == 0 ? [user_id, friend_id] : [friend_id, user_id]
-  end
-end
-
-Friendship.transaction do
-  friendship_id = 1
-
-  (1..number_users).each do |user_1|
-    remaining_friends_for_user_1 = number_friendships_per_user - ((user_1 - 1) % (number_friendships_per_user+1))
-    first_included_friend_id = user_1 + 1
-    last_included_friend_id = user_1 + remaining_friends_for_user_1
-
-    (first_included_friend_id..last_included_friend_id).each do |i|
-      user_2 = i > number_users ? ((i % number_users) + 1) : i
-
-      # First remaining friendships for a user_1 are friend requests
-      if i < first_included_friend_id + max_received_friend_requests_per_user
-        created_at = Time.now.strftime('%Y-%m-%d 00:00:00')
-        accepted_at = nil
-      else
-        created_at = Faker::Date.between('01/01/2013', Date.today.to_s).strftime('%Y-%m-%d 00:00:00')
-        accepted_at = created_at
-      end
-
-      user_id, friend_id = direction_of_friendship(user_1, user_2, friendship_id, accepted_at)
-      accepted_at_str = accepted_at.nil? ? 'NULL' : "'#{created_at}'"
-
-      insert_friendships << "('#{user_id}', '#{friend_id}', #{accepted_at_str}, '#{created_at}', '#{created_at}')"
-      friendship_id += 1
-
-      if insert_friendships.count > friendships_per_commit
-        sql = "INSERT INTO friendships (`user_id`, `friend_id`, `accepted_at`, `created_at`, `updated_at`) VALUES #{insert_friendships.join(', ')}"
-        Friendship.connection.execute sql
-        insert_friendships = []
+      if i > users_per_commit
+        sql = "INSERT INTO users (`username`, `email`, `encrypted_password`, `sign_in_count`, `created_at`, `updated_at`) VALUES #{insert_users.join(', ')}"
+        User.connection.execute sql
+        insert_users = []
       end
     end
   end
-end
 
 
-Quiz.transaction do
-  number_quizzes.times do |i|
-    sentences = Faker::Lorem.sentences(2)
-    title = sentences[0]
-    description = sentences[1]
-    author_id = Random.rand(1..number_users)
-    Quiz.connection.execute "INSERT INTO quizzes (title, description, author_id) VALUES ('#{title}', '#{description}', '#{author_id}')"
+  def direction_of_friendship(user_id, friend_id, friendship_id, accepted_at)
+    if accepted_at.nil?
+      # if friendship not yet accepted, we consider the direction of friendship to be a request for user_id
+      [friend_id, user_id]
+    else
+      # Every other friendships we switch the direction of the friendships (this decision si totally random)
+      friendship_id % 2 == 0 ? [user_id, friend_id] : [friend_id, user_id]
+    end
+  end
 
-    Question.transaction do
-      number_questions.times do
-        answers = Faker::Lorem.words(8)
+  Friendship.transaction do
+    friendship_id = 1
 
-        question = answers[4] + " " + answers[5]  + " " + answers[6] + " " + answers[7] + "?"
-        answer1 = answers[0]
-        answer2 = answers[1]
-        answer3 = answers[2]
-        answer4 = answers[3]
-        correct_answer = Random.rand(1..4)
+    (1..number_users).each do |user_1|
+      remaining_friends_for_user_1 = number_friendships_per_user - ((user_1 - 1) % (number_friendships_per_user+1))
+      first_included_friend_id = user_1 + 1
+      last_included_friend_id = user_1 + remaining_friends_for_user_1
 
-        Question.connection.execute "INSERT INTO questions (question, answer1, answer2, answer3, answer4, correct_answer, quiz_id) VALUES ('#{question}', '#{answer1}', '#{answer2}', '#{answer3}', '#{answer4}', #{correct_answer}, #{i + 1})"
+      (first_included_friend_id..last_included_friend_id).each do |i|
+        user_2 = i > number_users ? ((i % number_users) + 1) : i
+
+        # First remaining friendships for a user_1 are friend requests
+        if i < first_included_friend_id + max_received_friend_requests_per_user
+          created_at = Time.now.strftime('%Y-%m-%d 00:00:00')
+          accepted_at = nil
+        else
+          created_at = Faker::Date.between('01/01/2013', Date.today.to_s).strftime('%Y-%m-%d 00:00:00')
+          accepted_at = created_at
+        end
+
+        user_id, friend_id = direction_of_friendship(user_1, user_2, friendship_id, accepted_at)
+        accepted_at_str = accepted_at.nil? ? 'NULL' : "'#{created_at}'"
+
+        insert_friendships << "('#{user_id}', '#{friend_id}', #{accepted_at_str}, '#{created_at}', '#{created_at}')"
+        friendship_id += 1
+
+        if insert_friendships.count > friendships_per_commit
+          sql = "INSERT INTO friendships (`user_id`, `friend_id`, `accepted_at`, `created_at`, `updated_at`) VALUES #{insert_friendships.join(', ')}"
+          Friendship.connection.execute sql
+          insert_friendships = []
+        end
+      end
+    end
+  end
+
+
+  Quiz.transaction do
+    number_quizzes.times do |i|
+      sentences = Faker::Lorem.sentences(2)
+      title = sentences[0]
+      description = sentences[1]
+      author_id = Random.rand(1..number_users)
+      Quiz.connection.execute "INSERT INTO quizzes (title, description, author_id) VALUES ('#{title}', '#{description}', '#{author_id}')"
+
+      Question.transaction do
+        number_questions.times do
+          answers = Faker::Lorem.words(8)
+
+          question = answers[4] + " " + answers[5]  + " " + answers[6] + " " + answers[7] + "?"
+          answer1 = answers[0]
+          answer2 = answers[1]
+          answer3 = answers[2]
+          answer4 = answers[3]
+          correct_answer = Random.rand(1..4)
+
+          Question.connection.execute "INSERT INTO questions (question, answer1, answer2, answer3, answer4, correct_answer, quiz_id) VALUES ('#{question}', '#{answer1}', '#{answer2}', '#{answer3}', '#{answer4}', #{correct_answer}, #{i + 1})"
+        end
       end
     end
   end
 end
-
 
 
 
