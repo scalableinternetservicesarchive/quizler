@@ -37,7 +37,7 @@ number_friendships_per_user = max_received_friend_requests_per_user + max_friend
 insert_users = []
 insert_friendships = []
 
-  if User.count > 10 then
+if User.count < 10 then
 
   User.transaction do
     (2..number_users).each do |i|
