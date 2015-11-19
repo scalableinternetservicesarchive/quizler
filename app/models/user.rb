@@ -38,19 +38,19 @@ class User < ActiveRecord::Base
   # end
 
   def get_friends_and_pending_friends
-    Friendship.get_friendships_including_pending(self).map do |friendship|
+    Friendship.get_friendships_including_pending(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
 
   def get_friends
-    Friendship.get_friends(self).map do |friendship|
+    Friendship.get_friends(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
 
   def get_pending_friends
-    Friendship.get_pending_friends(self).map do |friendship|
+    Friendship.get_pending_friends(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
