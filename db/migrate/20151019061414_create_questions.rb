@@ -1,5 +1,7 @@
 class CreateQuestions < ActiveRecord::Migration
   def change
+    drop_table :questions if (table_exists? :questions)
+
     create_table :questions do |t|
       t.string :question
       t.string :answer1
