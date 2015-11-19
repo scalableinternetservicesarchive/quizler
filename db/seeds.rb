@@ -21,25 +21,19 @@ if User.count < 10 then
   Question.create!(question: 'Which is NOT a beer?', answer1: 'Duff', answer2: 'Corona', answer3: 'Quizler', answer4: 'Heineken', quiz_id: 2, correct_answer: 3)
 
 
-  #number_quizzes = 10000
-  #number_questions = 8
-
-  #number_users = 10000
-
-  number_quizzes = 100
+  number_quizzes = 10000
   number_questions = 8
 
-  number_users = 100
+  number_users = 10000
+
 
 
   max_received_friend_requests_per_user = 2
   max_friends_per_user = 40
 
-  #users_per_commit = 250
-  #friendships_per_commit = 250
+  users_per_commit = 250
+  friendships_per_commit = 250
 
-  users_per_commit = 25
-  friendships_per_commit = 25
 
   number_friendships_per_user = max_received_friend_requests_per_user + max_friends_per_user
 
