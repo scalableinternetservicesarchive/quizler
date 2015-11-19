@@ -1,7 +1,7 @@
 class CreateHighscores < ActiveRecord::Migration
   def change
     #create_table(:highscores, id: false, primary_key: 'user_id' ) do |t|
-    #drop_table :highscores if (table_exists? :highscores)
+    drop_table :highscores if (table_exists? :highscores)
 
     create_table(:highscores) do |t|
 

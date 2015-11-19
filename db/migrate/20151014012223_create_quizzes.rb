@@ -3,7 +3,7 @@ class CreateQuizzes < ActiveRecord::Migration
 
   def change
 
-    #drop_table :quizzes if (table_exists? :quizzes)
+    drop_table :quizzes if (table_exists? :quizzes)
     create_table :quizzes do |t|
       t.string :title
       t.text :description
