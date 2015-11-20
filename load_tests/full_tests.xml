@@ -9,7 +9,7 @@
 
   <!-- Server side setup -->
   <servers>
-    <server host="54.175.147.178" port="80" type="tcp"></server>
+    <server host="quizler-fmalinowski-2-1651810941.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
   </servers>
 
   <!-- Adding more users -->
@@ -34,7 +34,10 @@
     </arrivalphase>  
     <arrivalphase phase="7" duration="30" unit="second">
       <users arrivalrate="32" unit="second"></users>
-    </arrivalphase>  
+    </arrivalphase>
+    <arrivalphase phase="8" duration="30" unit="second">
+      <users arrivalrate="64" unit="second"></users>
+    </arrivalphase>
   </load>
 
   <options>
@@ -411,16 +414,8 @@
 
       <!-- Go to Search user page -->
       <request>
-        <!--<dyn_variable name="meta_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>-->
         <http url="/friends/search" method="GET" version="1.1"></http>
       </request>
-
-      <!-- <setdyvars sourcetype="eval" code="fun({Pid,DynVars})->
-          {ok, Val} = ts_dynvars:lookup(meta_token, DynVars),
-          list_to_binary(http_uri:encode(binary_to_list(Val)))
-        end.">
-        <var name="escaped_meta_token" />
-      </setdynvars> -->
 
       <thinktime value="5" random="true"></thinktime>
 
@@ -431,19 +426,9 @@
         </request>
       </transaction>
 
-      <transaction name="search_he_users">
-        <request>
-          <http url="/friends/search?username=he" method="GET" version="1.1"></http>
-        </request>
-      </transaction>
-
-      <!-- Friend request to Jeff -->
-      <!-- <request subst="true">
-        <http url="/friends" method="POST" version="1.1" content_type="application/json" contents="{&quot;user_id&quot;: &quot;%%_escaped_meta_token%%&quot;}">
-          <http_header name="Accept" value="application/json"/>
-          <http_header name="X-CSRF-Token" value="%%_escaped_meta_token%%"/>
-        </http>
-      </request> -->
+      <request>
+        <http url="/friends/search?username=he" method="GET" version="1.1"></http>
+      </request>
 
     </session>
 
