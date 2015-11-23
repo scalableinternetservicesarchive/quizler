@@ -13,9 +13,8 @@
 
  <br>
     <%= link_to 'Browse Quizzes', quizzes_browse_path %>
-
-<% if user_signed_in? %>
     <br>
+<% if user_signed_in? %>
     <%= link_to 'My Quizzes', quizzes_path %>
     <br>
     <%= link_to 'Find friends', search_friends_path %>
@@ -24,5 +23,6 @@
 
 <% else %>
     <%= link_to 'Sign up', new_user_registration_path %>
+    <br>
     <%= link_to 'Sign in', new_user_session_path, class: 'js-dashboard-login-link' %>
 <% end %>
