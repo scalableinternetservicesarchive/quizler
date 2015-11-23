@@ -1,0 +1,11 @@
+INSTANCE
+single passenger M3.2XL
+
+CHANGES
+All the SQL queries were optimized (use of includes or single query in search users by joining users and friendships tables)
+Removal of unnecessary code and links in views of sign in page
+Removed sign in process in the load testing file, both for the game flow and for browsing quizzes - to make the flow more realistic and because the sign in phase is a bottleneck.
+
+
+RESULT
+Can handle more simultaneous users, but its still a gap
