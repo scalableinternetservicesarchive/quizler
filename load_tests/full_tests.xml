@@ -336,6 +336,7 @@
       <thinktime value="5" random="true"></thinktime>
 
       <!-- Sign in page -->
+      <!--
       <request>
         <dyn_variable name="authenticity_token"></dyn_variable>
         <http url="/users/sign_in" method="GET" version="1.1"></http>
@@ -349,14 +350,17 @@
       </setdynvars>
 
       <thinktime value="12" random="true"></thinktime>
+      -->
 
       <!-- User signs in -->
+      <!--
       <request subst="true">
         <http url="/users/sign_in"
               method="POST" version="1.1"
               contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%"
               content_type="application/x-www-form-urlencoded"></http>
       </request>
+      -->
 
       <!-- redirect to main page -->
       <request>
