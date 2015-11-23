@@ -197,7 +197,9 @@
 
       <thinktime value="5" random="true"></thinktime>
 
+
       <!-- Sign in page -->
+      <!--
       <transaction name="sign_in_SHOW">
         <request>
           <dyn_variable name="authenticity_token"></dyn_variable>
@@ -213,8 +215,10 @@
       </setdynvars>
 
       <thinktime value="12" random="true"></thinktime>
+      -->
 
       <!-- User signs in -->
+      <!--
       <transaction name="sign_in_POST">
         <request subst="true">
           <http url="/users/sign_in"
@@ -223,6 +227,7 @@
               content_type="application/x-www-form-urlencoded"></http>
         </request>
       </transaction>
+      -->
 
       <!-- redirect to main page -->
       <transaction name="index">
