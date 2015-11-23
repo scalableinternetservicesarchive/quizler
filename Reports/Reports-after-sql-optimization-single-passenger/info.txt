@@ -1,0 +1,7 @@
+Look at the simple.xml file in folder to see the content of load test.
+Both of those tests were executed with a DB of 10,000 users, 210,000 friendships, 10,000 quizzes, 80,000 questions.
+With about 40 friendships per user.
+
+The tests used the app at the commit f1f8f7826599841220712ed7b7f5600569e35387 on branch optimizeSQLqueries.
+
+It contains SQL optimizations for all pages and also optimization of sign in and sign up pages where we removed some unnecessary calls in views for unused links (devise calls)

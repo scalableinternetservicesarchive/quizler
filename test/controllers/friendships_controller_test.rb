@@ -23,7 +23,7 @@ class FriendshipsControllerTest < ActionController::TestCase
 
     assert_response :success
     assert_equal '', assigns(:username)
-    assert_equal [user_1, user_2, user_3], assigns(:users)
+    assert_equal [user_1, user_2, user_3], assigns(:users_joined_with_friendships)
   end
 
   test 'search when looking for usernames having same substring' do
@@ -35,7 +35,7 @@ class FriendshipsControllerTest < ActionController::TestCase
 
     assert_response :success
     assert_equal 'fran', assigns(:username)
-    assert_equal [user_1, user_3], assigns(:users)
+    assert_equal [user_1, user_3], assigns(:users_joined_with_friendships)
   end
 
   test 'create when potential new friend is not found' do

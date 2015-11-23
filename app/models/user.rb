@@ -38,19 +38,19 @@ class User < ActiveRecord::Base
   # end
 
   def get_friends_and_pending_friends
-    Friendship.get_friendships_including_pending(self).map do |friendship|
+    Friendship.get_friendships_including_pending(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
 
   def get_friends
-    Friendship.get_friends(self).map do |friendship|
+    Friendship.get_friends(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
 
   def get_pending_friends
-    Friendship.get_pending_friends(self).map do |friendship|
+    Friendship.get_pending_friends(self).includes(:user).includes(:friend).map do |friendship|
       friendship.user_id == self.id ? friendship.friend : friendship.user
     end
   end
@@ -65,7 +65,20 @@ class User < ActiveRecord::Base
     friendship.nil? ? false : !friendship.accepted_at.nil?
   end
 
-  def self.search_user(username, current_user)
+  def self.search_users_count(current_user, username)
+    User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id).count
+  end
+
+  def self.search_users(current_user, username)
+    joined_table = "
+    LEFT JOIN
+      (SELECT user_id, friend_id, accepted_at
+      FROM friendships
+      WHERE (friend_id = #{current_user.id} OR user_id = #{current_user.id})) T
+    ON T.user_id = users.id OR T.friend_id = users.id"
+
     User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id)
+        .joins(joined_table)
+        .select('users.id, users.username, users.email, user_id, friend_id, accepted_at')
   end
 end

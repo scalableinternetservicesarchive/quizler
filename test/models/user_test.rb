@@ -144,7 +144,7 @@ class UserTest < ActiveSupport::TestCase
     assert !user_2.friends?(user_3)
   end
 
-  test 'search_user returns list of users containing matching characters specified in username input' do
+  test 'search_users_count returns list of users containing matching characters specified in username input' do
     user_1 = User.create(username: 'francois1', email: 'user1@ucsb.edu', password: 'password')
     user_2 = User.create(username: 'francois2', email: 'user2@ucsb.edu', password: 'password')
     user_3 = User.create(username: 'franck', email: 'user3@ucsb.edu', password: 'password')
@@ -152,10 +152,24 @@ class UserTest < ActiveSupport::TestCase
     user_5 = User.create(username: 'francis', email: 'user5@ucsb.edu', password: 'password')
     user_6 = User.create(username: 'stephan', email: 'user6@ucsb.edu', password: 'password')
 
-    assert_equal [user_2, user_3, user_4, user_5], User.search_user('fra', user_1).to_a
-    assert_equal [user_2, user_4], User.search_user('franco', user_1).to_a
-    assert_equal [user_2, user_4, user_5, user_6], User.search_user('s', user_1).to_a
-    assert_equal [user_1, user_4], User.search_user('franco', user_2).to_a
+    assert_equal 4, User.search_users_count(user_1, 'fra')
+    assert_equal 2, User.search_users_count(user_1, 'franco')
+    assert_equal 4, User.search_users_count(user_1, 's')
+    assert_equal 2, User.search_users_count(user_2, 'franco')
+  end
+
+  test 'search_users returns list of users containing matching characters specified in username input' do
+    user_1 = User.create(username: 'francois1', email: 'user1@ucsb.edu', password: 'password')
+    user_2 = User.create(username: 'francois2', email: 'user2@ucsb.edu', password: 'password')
+    user_3 = User.create(username: 'franck', email: 'user3@ucsb.edu', password: 'password')
+    user_4 = User.create(username: 'francoise', email: 'user4@ucsb.edu', password: 'password')
+    user_5 = User.create(username: 'francis', email: 'user5@ucsb.edu', password: 'password')
+    user_6 = User.create(username: 'stephan', email: 'user6@ucsb.edu', password: 'password')
+
+    assert_equal [user_2, user_3, user_4, user_5], User.search_users(user_1, 'fra').to_a
+    assert_equal [user_2, user_4], User.search_users(user_1, 'franco').to_a
+    assert_equal [user_2, user_4, user_5, user_6], User.search_users(user_1, 's').to_a
+    assert_equal [user_1, user_4], User.search_users(user_2, 'franco').to_a
   end
 
   test 'a user has many quizzes' do

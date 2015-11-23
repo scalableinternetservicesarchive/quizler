@@ -1,16 +1,16 @@
 module FriendshipsHelper
 
-  def add_friend_button(user)
+  def add_friend_button(search_user_result)
     value_button = 'Add Friend'
     options = {
-        data: {path: friends_path, id: user.id} ,
+        data: {path: friends_path, id: search_user_result.id} ,
         class: 'js-add-friend-btn',
     }
 
-    if current_user.pending_friend?(user)
+    if search_user_result.pending_friend?
       value_button = 'Friend request sent'
       options[:disabled] = true
-    elsif current_user.friends?(user)
+    elsif search_user_result.friends?
       value_button = 'Friend'
       options[:disabled] = true
     end

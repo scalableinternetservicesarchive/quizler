@@ -4,8 +4,8 @@ class FriendshipsController < ApplicationController
     @username = params[:username]
 
     if @username
-      @quizzes = Quiz
-      @users = User.search_user(@username, current_user).paginate(page: params[:page], per_page: 30)
+      @users_count = User.search_users_count(current_user, @username)
+      @users_joined_with_friendships = User.search_users(current_user, @username).paginate(page: params[:page], per_page: 30, total_entries: @users_count)
     end
   end
 

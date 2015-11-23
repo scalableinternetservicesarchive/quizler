@@ -7,6 +7,6 @@
 	<%= submit_tag 'Search' %>
 <% end %>
 
-<% if @users.present? %>
+<% if @users_joined_with_friendships.present? %>
     <%= render 'search_users_results' %>
 <% end %>
