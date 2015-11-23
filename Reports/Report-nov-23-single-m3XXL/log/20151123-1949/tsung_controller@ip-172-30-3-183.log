@@ -1,0 +1,3571 @@
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20151123-1949"
+ 
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+              ts_mon:(5:<0.54.0>) starting monitor, global 
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+      ts_config_http:(4:<0.72.0>) Get user agent: 100 "Mozilla/5.0 (Windows; U; Windows NT 5.2; fr-FR; rv:1.7.8) Gecko/20050511 Firefox/1.0.4" 
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Session name for id 1 is "create-quiz"
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Session name for id 2 is "play-game"
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Session name for id 3 is "browse-quizzes"
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Session name for id 4 is "search-all-friends"
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+           ts_config:(5:<0.72.0>) Session name for id 5 is "see-friend-requests-and-look-at-friends"
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(4:<0.72.0>) SYSINFO:Tsung version: 1.6.0
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(4:<0.72.0>) SYSINFO:Erlang version: Erlang R14B04 (erts-5.8.5) [source] [64-bit] [rq:1] [async-threads:8] [kernel-poll:true]
+
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(4:<0.72.0>) SYSINFO:System architecture x86_64-redhat-linux-gnu
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(4:<0.72.0>) SYSINFO:Current path: /usr/lib/erlang/lib/tsung-1.6.0/ebin/tsung.beam
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+              ts_mon:(5:<0.73.0>) Activate clients with text backend
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+              ts_mon:(5:<0.73.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+  ts_launcher_static:(5:<0.128.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+         ts_launcher:(5:<0.129.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) All remote beams started, syncing 
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) Undefined ports_range config 
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 2 for client "localhost" (last ? true): will start 45 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 3 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 4 for client "localhost" (last ? true): will start 120 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 5 for client "localhost" (last ? true): will start 240 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 6 for client "localhost" (last ? true): will start 480 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 7 for client "localhost" (last ? true): will start 960 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+    ts_config_server:(5:<0.72.0>) New arrival phase 8 for client "localhost" (last ? true): will start 1920 users
+
+=INFO REPORT==== 23-Nov-2015::19:49:21 ===
+         ts_launcher:(5:<0.129.0>) Expected duration of first phase: 30.0 sec (30 users) 
+
+=INFO REPORT==== 23-Nov-2015::19:49:22 ===
+         ts_launcher:(5:<0.129.0>) Activate launcher (30 users) in 623 msec 
+
+=INFO REPORT==== 23-Nov-2015::19:49:52 ===
+         ts_launcher:(5:<0.129.0>) Phase duration exceeded, but not all users were launched (1 users, 3.3% of phase)
+
+=INFO REPORT==== 23-Nov-2015::19:49:52 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (45 users, 0.0015); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:50:02 ===
+           ts_search:(5:<0.169.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:03 ===
+           ts_search:(5:<0.169.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:07 ===
+           ts_search:(5:<0.184.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:07 ===
+           ts_search:(5:<0.184.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:15 ===
+           ts_search:(5:<0.191.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:16 ===
+           ts_search:(5:<0.197.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:17 ===
+         ts_launcher:(4:<0.129.0>) Need to wait 4.608 sec before changing phase, going to sleep
+
+=INFO REPORT==== 23-Nov-2015::19:50:20 ===
+           ts_search:(5:<0.189.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:21 ===
+           ts_search:(5:<0.204.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:22 ===
+           ts_search:(5:<0.176.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:22 ===
+         ts_launcher:(5:<0.129.0>) Waking up
+
+=INFO REPORT==== 23-Nov-2015::19:50:22 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (60 users, 0.002); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:50:22 ===
+           ts_search:(5:<0.215.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:23 ===
+           ts_search:(5:<0.205.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:23 ===
+           ts_search:(5:<0.213.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:23 ===
+           ts_search:(5:<0.220.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:25 ===
+           ts_search:(5:<0.205.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:29 ===
+           ts_search:(5:<0.215.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:30 ===
+           ts_search:(5:<0.230.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:32 ===
+           ts_search:(5:<0.191.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:33 ===
+           ts_search:(5:<0.189.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:35 ===
+           ts_search:(5:<0.218.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:36 ===
+           ts_search:(5:<0.218.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:42 ===
+           ts_search:(5:<0.204.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:44 ===
+           ts_search:(5:<0.229.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:44 ===
+           ts_search:(5:<0.254.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:45 ===
+           ts_search:(5:<0.230.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:48 ===
+           ts_search:(5:<0.220.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:48 ===
+           ts_search:(5:<0.197.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:50 ===
+           ts_search:(5:<0.229.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:52 ===
+           ts_search:(5:<0.257.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:53 ===
+           ts_search:(5:<0.213.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:54 ===
+         ts_launcher:(5:<0.129.0>) Phase duration exceeded, but not all users were launched (12 users, 20.0% of phase)
+
+=INFO REPORT==== 23-Nov-2015::19:50:54 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (120 users, 0.004); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:50:57 ===
+           ts_search:(5:<0.258.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:50:58 ===
+           ts_search:(5:<0.257.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:00 ===
+           ts_search:(5:<0.258.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:02 ===
+           ts_search:(5:<0.270.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:03 ===
+           ts_search:(5:<0.283.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:06 ===
+           ts_search:(5:<0.176.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:11 ===
+           ts_search:(5:<0.327.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:13 ===
+           ts_search:(5:<0.270.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:16 ===
+           ts_search:(5:<0.318.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:17 ===
+           ts_search:(5:<0.305.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:18 ===
+           ts_search:(5:<0.283.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:18 ===
+           ts_search:(5:<0.305.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:19 ===
+           ts_search:(5:<0.342.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:21 ===
+           ts_search:(5:<0.296.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:21 ===
+           ts_search:(5:<0.311.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:24 ===
+         ts_launcher:(5:<0.129.0>) Phase duration exceeded, but not all users were launched (5 users, 4.2% of phase)
+
+=INFO REPORT==== 23-Nov-2015::19:51:24 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (240 users, 0.008); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:51:25 ===
+           ts_search:(5:<0.327.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:27 ===
+           ts_search:(5:<0.366.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:30 ===
+           ts_search:(5:<0.344.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:34 ===
+           ts_search:(5:<0.366.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:35 ===
+           ts_search:(5:<0.420.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:35 ===
+           ts_search:(5:<0.318.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:36 ===
+           ts_search:(5:<0.403.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:37 ===
+           ts_search:(5:<0.299.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:37 ===
+           ts_search:(5:<0.385.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:38 ===
+           ts_search:(5:<0.367.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:39 ===
+           ts_search:(5:<0.454.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:40 ===
+           ts_search:(5:<0.367.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:40 ===
+           ts_search:(5:<0.296.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:41 ===
+           ts_search:(5:<0.344.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:43 ===
+           ts_search:(5:<0.468.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:43 ===
+           ts_search:(5:<0.468.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:44 ===
+           ts_search:(5:<0.418.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:44 ===
+           ts_search:(5:<0.304.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:44 ===
+           ts_search:(5:<0.311.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:44 ===
+           ts_search:(5:<0.421.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:45 ===
+           ts_search:(5:<0.352.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:46 ===
+           ts_search:(5:<0.403.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:46 ===
+           ts_search:(5:<0.512.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:47 ===
+           ts_search:(5:<0.421.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:47 ===
+           ts_search:(5:<0.397.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:48 ===
+           ts_search:(5:<0.522.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:48 ===
+           ts_search:(5:<0.438.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:48 ===
+           ts_search:(5:<0.398.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:51 ===
+           ts_search:(5:<0.398.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:51 ===
+           ts_search:(5:<0.551.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:52 ===
+           ts_search:(5:<0.553.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:52 ===
+           ts_search:(5:<0.547.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:52 ===
+           ts_search:(5:<0.325.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:53 ===
+           ts_search:(5:<0.547.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:54 ===
+           ts_search:(5:<0.428.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:54 ===
+           ts_search:(5:<0.486.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:54 ===
+         ts_launcher:(5:<0.129.0>) Phase duration exceeded, but not all users were launched (10 users, 4.2% of phase)
+
+=INFO REPORT==== 23-Nov-2015::19:51:54 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (480 users, 0.016); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:51:55 ===
+           ts_search:(5:<0.486.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:56 ===
+           ts_search:(5:<0.553.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:58 ===
+           ts_search:(5:<0.523.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:58 ===
+           ts_search:(5:<0.587.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:58 ===
+           ts_search:(5:<0.304.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:58 ===
+           ts_search:(5:<0.352.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:59 ===
+           ts_search:(5:<0.505.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:59 ===
+           ts_search:(5:<0.590.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:51:59 ===
+           ts_search:(5:<0.588.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:00 ===
+           ts_search:(5:<0.573.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:01 ===
+           ts_search:(5:<0.619.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:01 ===
+           ts_search:(5:<0.470.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:01 ===
+           ts_search:(5:<0.490.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:01 ===
+           ts_search:(5:<0.641.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:02 ===
+           ts_search:(5:<0.712.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:02 ===
+           ts_search:(5:<0.495.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:03 ===
+           ts_search:(5:<0.609.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:03 ===
+           ts_search:(5:<0.600.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:03 ===
+           ts_search:(5:<0.397.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:04 ===
+           ts_search:(5:<0.592.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:04 ===
+           ts_search:(5:<0.523.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:05 ===
+           ts_search:(5:<0.667.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:05 ===
+           ts_search:(5:<0.582.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:06 ===
+           ts_search:(5:<0.563.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:06 ===
+           ts_search:(5:<0.490.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:06 ===
+           ts_search:(5:<0.541.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:07 ===
+           ts_search:(5:<0.587.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:07 ===
+           ts_search:(5:<0.436.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:07 ===
+           ts_search:(5:<0.438.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:08 ===
+           ts_search:(5:<0.639.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:08 ===
+           ts_search:(5:<0.585.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:09 ===
+           ts_search:(5:<0.539.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:09 ===
+           ts_search:(5:<0.695.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:10 ===
+           ts_search:(5:<0.505.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:10 ===
+           ts_search:(5:<0.418.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.760.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.695.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.649.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.325.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.741.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.645.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.385.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.254.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.595.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:11 ===
+           ts_search:(5:<0.595.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:12 ===
+           ts_search:(5:<0.579.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:12 ===
+           ts_search:(5:<0.602.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:12 ===
+           ts_search:(5:<0.657.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:13 ===
+           ts_search:(5:<0.768.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:14 ===
+           ts_search:(5:<0.811.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:14 ===
+           ts_search:(5:<0.541.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:14 ===
+           ts_search:(5:<0.520.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:14 ===
+           ts_search:(5:<0.829.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:14 ===
+           ts_search:(5:<0.539.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.829.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.582.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.813.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.768.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.581.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.641.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.538.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:15 ===
+           ts_search:(5:<0.811.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:16 ===
+           ts_search:(5:<0.428.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:17 ===
+           ts_search:(5:<0.408.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:17 ===
+           ts_search:(5:<0.819.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:17 ===
+           ts_search:(5:<0.408.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:18 ===
+           ts_search:(5:<0.874.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:18 ===
+           ts_search:(5:<0.819.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:18 ===
+           ts_search:(5:<0.342.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:18 ===
+           ts_search:(5:<0.667.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:18 ===
+           ts_search:(5:<0.470.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.520.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.560.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.522.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.420.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.862.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:19 ===
+           ts_search:(5:<0.590.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:20 ===
+           ts_search:(5:<0.609.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:20 ===
+           ts_search:(5:<0.951.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:20 ===
+           ts_search:(5:<0.750.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:20 ===
+           ts_search:(5:<0.824.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:20 ===
+           ts_search:(5:<0.800.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:21 ===
+           ts_search:(5:<0.672.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:21 ===
+           ts_search:(5:<0.840.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:22 ===
+           ts_search:(5:<0.947.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:22 ===
+           ts_search:(5:<0.649.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:23 ===
+           ts_search:(5:<0.619.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:23 ===
+           ts_search:(5:<0.978.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:23 ===
+         ts_launcher:(4:<0.129.0>) Need to wait 0.941 sec before changing phase, going to sleep
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.946.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.726.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.836.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.585.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.798.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.862.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.706.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+         ts_launcher:(5:<0.129.0>) Waking up
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (960 users, 0.032); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:52:24 ===
+           ts_search:(5:<0.867.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:25 ===
+           ts_search:(5:<0.495.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:25 ===
+           ts_search:(5:<0.1001.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:25 ===
+           ts_search:(5:<0.784.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:25 ===
+           ts_search:(5:<0.813.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:26 ===
+           ts_search:(5:<0.978.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:26 ===
+           ts_search:(5:<0.951.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:26 ===
+           ts_search:(5:<0.1061.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:26 ===
+           ts_search:(5:<0.517.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:26 ===
+           ts_search:(5:<0.560.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:27 ===
+           ts_search:(5:<0.551.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:28 ===
+           ts_search:(5:<0.578.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:28 ===
+           ts_search:(5:<0.672.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:28 ===
+           ts_search:(5:<0.1061.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:28 ===
+           ts_search:(5:<0.874.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:29 ===
+           ts_search:(5:<0.947.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:29 ===
+           ts_search:(5:<0.1001.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:29 ===
+           ts_search:(5:<0.913.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:29 ===
+           ts_search:(5:<0.1033.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:30 ===
+           ts_search:(5:<0.960.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:31 ===
+           ts_search:(5:<0.800.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:31 ===
+           ts_search:(5:<0.655.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:32 ===
+           ts_search:(5:<0.867.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:32 ===
+           ts_search:(5:<0.837.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:32 ===
+           ts_search:(5:<0.538.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:33 ===
+           ts_search:(5:<0.750.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:33 ===
+           ts_search:(5:<0.960.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:33 ===
+           ts_search:(5:<0.798.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:33 ===
+           ts_search:(5:<0.517.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:33 ===
+           ts_search:(5:<0.563.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:34 ===
+           ts_search:(5:<0.840.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:34 ===
+           ts_search:(5:<0.579.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:34 ===
+           ts_search:(5:<0.573.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:34 ===
+           ts_search:(5:<0.995.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:35 ===
+           ts_search:(5:<0.1259.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:35 ===
+           ts_search:(5:<0.1135.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:35 ===
+           ts_search:(5:<0.648.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:35 ===
+           ts_search:(5:<0.592.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:36 ===
+           ts_search:(5:<0.1380.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:36 ===
+           ts_search:(5:<0.1231.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:36 ===
+           ts_search:(5:<0.945.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:37 ===
+           ts_search:(5:<0.1049.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:37 ===
+           ts_search:(5:<0.454.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:37 ===
+           ts_search:(5:<0.1120.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:37 ===
+           ts_search:(5:<0.1100.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.1120.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.1183.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.726.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.1049.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.848.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.1094.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:38 ===
+           ts_search:(5:<0.1220.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:39 ===
+           ts_search:(5:<0.1182.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:39 ===
+           ts_search:(5:<0.1451.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:40 ===
+           ts_search:(5:<0.1499.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:40 ===
+           ts_search:(5:<0.895.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:40 ===
+           ts_search:(5:<0.1041.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:41 ===
+           ts_search:(5:<0.648.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:41 ===
+           ts_search:(5:<0.1451.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:41 ===
+           ts_search:(5:<0.1182.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:42 ===
+           ts_search:(5:<0.1526.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:42 ===
+           ts_search:(5:<0.1308.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:42 ===
+           ts_search:(5:<0.1340.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.863.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.1321.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.1499.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.712.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.1523.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.436.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.1193.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:43 ===
+           ts_search:(5:<0.1104.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1380.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.900.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1367.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.946.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1376.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1425.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1311.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1073.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:44 ===
+           ts_search:(5:<0.1297.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:45 ===
+           ts_search:(5:<0.1575.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:45 ===
+           ts_search:(5:<0.1231.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:45 ===
+           ts_search:(5:<0.1308.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:45 ===
+           ts_search:(5:<0.1523.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:45 ===
+           ts_search:(5:<0.1399.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1321.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.741.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1576.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1548.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.936.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1526.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1232.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1432.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.945.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:46 ===
+           ts_search:(5:<0.1583.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:47 ===
+           ts_search:(5:<0.1297.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:47 ===
+           ts_search:(5:<0.1587.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:47 ===
+           ts_search:(5:<0.1162.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:47 ===
+           ts_search:(5:<0.1162.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1266.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1670.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1143.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1311.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.588.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.922.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1422.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:48 ===
+           ts_search:(5:<0.1104.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:49 ===
+           ts_search:(5:<0.1422.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:49 ===
+           ts_search:(5:<0.1497.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:49 ===
+           ts_search:(5:<0.784.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:49 ===
+           ts_search:(5:<0.1041.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:50 ===
+           ts_search:(5:<0.1497.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:50 ===
+           ts_search:(5:<0.1214.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:50 ===
+           ts_search:(5:<0.1527.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:50 ===
+           ts_search:(5:<0.1100.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:51 ===
+           ts_search:(5:<0.922.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:51 ===
+           ts_search:(5:<0.1468.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:51 ===
+           ts_search:(5:<0.1399.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:51 ===
+           ts_search:(5:<0.1407.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.1135.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.1604.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.598.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.1624.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.995.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:52 ===
+           ts_search:(5:<0.1468.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1050.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1425.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1508.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1654.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1814.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.912.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1692.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:53 ===
+           ts_search:(5:<0.1063.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.1050.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.1347.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.1020.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.1184.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.1236.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+         ts_launcher:(4:<0.129.0>) Need to wait 0.221 sec before changing phase, going to sleep
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+         ts_launcher:(5:<0.129.0>) Waking up
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+         ts_launcher:(5:<0.129.0>) Start a new arrival phase (1920 users, 0.064); expected duration=30.0 sec
+
+=INFO REPORT==== 23-Nov-2015::19:52:54 ===
+           ts_search:(5:<0.936.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1721.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1143.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1340.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1548.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.299.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.600.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.837.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1236.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1567.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1493.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1288.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:55 ===
+           ts_search:(5:<0.1472.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.2011.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1532.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1527.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1367.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.927.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1858.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1870.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:56 ===
+           ts_search:(5:<0.1394.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:57 ===
+           ts_search:(5:<0.1698.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:57 ===
+           ts_search:(5:<0.1617.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:57 ===
+           ts_search:(5:<0.2075.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1994.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1576.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1689.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1784.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1617.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.848.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.2105.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1695.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:58 ===
+           ts_search:(5:<0.1328.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1902.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1883.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1408.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1266.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1773.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1624.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1465.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:52:59 ===
+           ts_search:(5:<0.1883.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.927.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1489.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1273.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1731.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.655.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1630.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1019.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1255.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:00 ===
+           ts_search:(5:<0.1876.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:01 ===
+           ts_search:(5:<0.1390.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:01 ===
+           ts_search:(5:<0.1126.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:01 ===
+           ts_search:(5:<0.1604.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:01 ===
+           ts_search:(5:<0.1737.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.824.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.1301.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.1635.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.2141.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.1796.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.578.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.2011.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:02 ===
+           ts_search:(5:<0.1698.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.1033.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.1464.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.1772.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.2058.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.760.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:03 ===
+           ts_search:(5:<0.1390.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.2026.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.1928.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.2215.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.1165.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.2156.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.1408.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.2156.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.912.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:04 ===
+           ts_search:(5:<0.1981.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.1193.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.863.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.657.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.1407.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.1814.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.1673.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:05 ===
+           ts_search:(5:<0.1234.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1947.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1383.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1870.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1712.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.2096.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1947.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.2058.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1598.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:06 ===
+           ts_search:(5:<0.1957.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:07 ===
+           ts_search:(5:<0.1572.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:07 ===
+           ts_search:(5:<0.1094.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:07 ===
+           ts_search:(5:<0.1689.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:07 ===
+           ts_search:(5:<0.1119.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.1376.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2262.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.984.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.1572.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2194.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.856.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.1839.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.1220.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2212.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2151.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2088.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.1980.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:08 ===
+           ts_search:(5:<0.2104.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.2088.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.1464.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.1829.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.1673.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.2369.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:09 ===
+           ts_search:(5:<0.1635.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:10 ===
+           ts_search:(5:<0.1153.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:10 ===
+           ts_search:(5:<0.1777.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:10 ===
+           ts_search:(5:<0.1994.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:10 ===
+           ts_search:(5:<0.2202.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:10 ===
+           ts_search:(5:<0.2081.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1873.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1858.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1575.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1349.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.2254.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.2271.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1020.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1929.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1232.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.1447.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:11 ===
+           ts_search:(5:<0.2279.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.1273.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.1713.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.856.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2202.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2271.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2176.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.1347.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2141.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.1319.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.1073.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:12 ===
+           ts_search:(5:<0.2105.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.706.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2789.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2094.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2385.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2215.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2601.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2259.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.1007.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.1690.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.1654.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2252.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.1929.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.2132.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:13 ===
+           ts_search:(5:<0.1183.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:14 ===
+           ts_search:(5:<0.1019.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:14 ===
+           ts_search:(5:<0.2277.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:14 ===
+           ts_search:(5:<0.2026.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:14 ===
+           ts_search:(5:<0.2075.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.1288.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.2673.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.2137.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.2257.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.1301.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.2276.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.2262.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:15 ===
+           ts_search:(5:<0.1981.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.1562.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.1953.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.1953.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.2673.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.2192.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.2353.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:16 ===
+           ts_search:(5:<0.1234.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.645.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.2454.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.1902.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.2607.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.2025.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.1857.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.1857.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.2064.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.2104.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:17 ===
+           ts_search:(5:<0.1259.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.2081.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.2320.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.2224.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.1360.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.2263.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.895.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:18 ===
+           ts_search:(5:<0.2263.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2539.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2871.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.1630.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2539.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2050.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2241.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.1692.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.1255.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.1126.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.913.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:19 ===
+           ts_search:(5:<0.2430.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2362.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.1432.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.1933.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.1562.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2096.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2228.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2303.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2279.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:20 ===
+           ts_search:(5:<0.2220.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.1873.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.1957.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.3119.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.2738.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.2540.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.2353.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.2872.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:21 ===
+           ts_search:(5:<0.900.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1465.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1235.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1909.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1933.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1214.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.2021.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.1319.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.2257.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.3119.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:22 ===
+           ts_search:(5:<0.2336.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.2206.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.2336.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.1396.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.2086.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.1644.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.1601.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.2385.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:23 ===
+           ts_search:(5:<0.2212.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.2241.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.1737.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.2943.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.2086.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.2605.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.2362.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.1876.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.1532.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+           ts_search:(5:<0.3199.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+         ts_launcher:(5:<0.129.0>) Phase duration exceeded, but not all users were launched (101 users, 5.3% of phase)
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+         ts_launcher:(5:<0.129.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 23-Nov-2015::19:53:24 ===
+     ts_launcher_mgr:(5:<0.123.0>) Still 1988 active client(s)
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.2537.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.2395.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.2302.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.2454.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.2674.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:25 ===
+           ts_search:(5:<0.1784.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.1928.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.1472.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.2192.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.1749.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.3468.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.3448.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.1777.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:26 ===
+           ts_search:(5:<0.3199.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3045.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3202.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.2972.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.1360.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3045.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.2972.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.1447.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.2252.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3238.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3534.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.2220.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3471.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.1235.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3238.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.1165.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:27 ===
+           ts_search:(5:<0.3555.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:28 ===
+           ts_search:(5:<0.602.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:28 ===
+           ts_search:(5:<0.2644.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:28 ===
+           ts_search:(5:<0.3202.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:28 ===
+           ts_search:(5:<0.1153.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:28 ===
+           ts_search:(5:<0.1184.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:29 ===
+           ts_search:(5:<0.1980.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:29 ===
+           ts_search:(5:<0.2453.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:29 ===
+           ts_search:(5:<0.2276.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:29 ===
+           ts_search:(5:<0.1695.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:29 ===
+           ts_search:(5:<0.2813.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.2763.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.3671.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.2483.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.3272.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.2171.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.3094.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.1567.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.1869.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.2644.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.3044.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:30 ===
+           ts_search:(5:<0.2603.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2603.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.3555.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2607.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2601.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2515.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2943.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:31 ===
+           ts_search:(5:<0.2025.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.2395.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.3044.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.3341.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.3173.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.2515.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.2537.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.1489.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:32 ===
+           ts_search:(5:<0.2050.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.2369.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.2453.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.3559.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.1394.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.639.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.2713.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:33 ===
+           ts_search:(5:<0.2721.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.3810.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.2934.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.2540.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.3721.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.3534.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.984.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:34 ===
+           ts_search:(5:<0.2763.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:35 ===
+           ts_search:(5:<0.1583.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:35 ===
+           ts_search:(5:<0.2254.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:35 ===
+           ts_search:(5:<0.2735.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:36 ===
+           ts_search:(5:<0.1772.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:36 ===
+           ts_search:(5:<0.1007.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:36 ===
+           ts_search:(5:<0.2902.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:36 ===
+           ts_search:(5:<0.3155.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:36 ===
+           ts_search:(5:<0.3667.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.1829.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.2228.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.3351.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.3540.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.3554.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.1396.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.2738.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:37 ===
+           ts_search:(5:<0.3672.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.1493.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.3470.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.2483.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.1587.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.2704.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.2302.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.2702.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.1365.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.1598.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.3470.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.3721.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.3057.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.3812.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:38 ===
+           ts_search:(5:<0.2969.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.2605.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.1601.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.512.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3754.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3468.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3616.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3860.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3500.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.2872.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:39 ===
+           ts_search:(5:<0.3214.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.1712.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.3341.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.3769.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.1796.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.3604.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.3214.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:40 ===
+           ts_search:(5:<0.3540.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.3377.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.2346.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.3798.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.2821.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.3085.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.3732.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.1843.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.2721.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:41 ===
+           ts_search:(5:<0.1924.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:42 ===
+           ts_search:(5:<0.2338.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:42 ===
+           ts_search:(5:<0.1731.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:42 ===
+           ts_search:(5:<0.3348.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:42 ===
+           ts_search:(5:<0.2486.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:42 ===
+           ts_search:(5:<0.2735.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.3796.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.2486.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.3792.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.3248.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.2259.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.3887.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.2338.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:43 ===
+           ts_search:(5:<0.2902.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.2151.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.836.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.2802.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3515.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.2194.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3057.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3817.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.2176.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3883.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3348.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.2430.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3616.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:44 ===
+           ts_search:(5:<0.3805.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:45 ===
+           ts_search:(5:<0.3542.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:45 ===
+           ts_search:(5:<0.3650.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:45 ===
+           ts_search:(5:<0.2484.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:45 ===
+           ts_search:(5:<0.3765.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:45 ===
+           ts_search:(5:<0.1063.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.2320.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.3021.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.3857.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.3087.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.3229.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:46 ===
+           ts_search:(5:<0.2875.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3589.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.2524.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3604.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.2598.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3732.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3229.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.2730.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.1869.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.1644.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.2171.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3182.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3248.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.3543.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.2752.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:47 ===
+           ts_search:(5:<0.1749.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.1349.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.3355.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.2908.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.3355.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.1839.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.3189.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.3857.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.2885.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.3857.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.2977.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:48 ===
+           ts_search:(5:<0.2713.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.3798.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.3333.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.3554.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.1415.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.2730.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.3798.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.2724.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.2834.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:49 ===
+           ts_search:(5:<0.3409.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3887.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3796.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3155.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3151.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.2519.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.2094.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.2056.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3543.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.2346.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:50 ===
+           ts_search:(5:<0.3545.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2724.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.3599.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2056.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2687.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.3824.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2689.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.3384.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.3765.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.3358.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:51 ===
+           ts_search:(5:<0.2802.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.581.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3774.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3264.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3182.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3358.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.2752.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3065.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3599.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.2436.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:52 ===
+           ts_search:(5:<0.3272.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3650.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3860.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3264.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3087.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3289.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.3194.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.2728.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:53 ===
+           ts_search:(5:<0.2519.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.598.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3289.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.2948.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.2818.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3672.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3566.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3384.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3541.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3560.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3010.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3173.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.1271.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.3667.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:54 ===
+           ts_search:(5:<0.889.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:55 ===
+           ts_search:(5:<0.1924.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:55 ===
+           ts_search:(5:<0.3792.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:55 ===
+           ts_search:(5:<0.3830.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:55 ===
+           ts_search:(5:<0.1328.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3490.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3824.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3516.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3694.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3351.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3542.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3222.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3769.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3042.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.2957.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.2934.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3179.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3575.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.2436.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:56 ===
+           ts_search:(5:<0.3410.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.1383.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.3668.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2871.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2857.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.3668.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2957.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.3377.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.3671.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.3859.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2702.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.1773.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2132.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:57 ===
+           ts_search:(5:<0.2704.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.3799.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.2224.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.3383.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.3560.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.3071.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:58 ===
+           ts_search:(5:<0.3064.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3420.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.2686.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3830.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3859.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3460.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3754.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3861.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3833.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.2958.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3423.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3737.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:53:59 ===
+           ts_search:(5:<0.3559.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.3010.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.3071.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.1721.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.3588.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.2779.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.2684.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.3126.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:00 ===
+           ts_search:(5:<0.3494.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3194.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3522.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3737.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3601.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3833.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.1415.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:01 ===
+           ts_search:(5:<0.3762.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.3569.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.2686.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.1271.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.3642.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.3861.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.1713.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.3494.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:02 ===
+           ts_search:(5:<0.3065.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.2779.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3817.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.1690.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3686.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3179.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3550.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3522.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3828.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:03 ===
+           ts_search:(5:<0.3569.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:04 ===
+           ts_search:(5:<0.2137.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:04 ===
+           ts_search:(5:<0.3139.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:04 ===
+           ts_search:(5:<0.3425.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:04 ===
+           ts_search:(5:<0.2743.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:04 ===
+           ts_search:(5:<0.3886.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3550.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.2584.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3136.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3516.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3759.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3762.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.2729.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.2584.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.889.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3510.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.2908.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:05 ===
+           ts_search:(5:<0.3449.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.2821.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.3774.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.2460.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.3864.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.2979.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.3514.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.3409.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.2969.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:06 ===
+           ts_search:(5:<0.1119.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:07 ===
+           ts_search:(5:<0.3085.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:07 ===
+           ts_search:(5:<0.2729.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:07 ===
+           ts_search:(5:<0.3253.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:07 ===
+           ts_search:(5:<0.1843.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:07 ===
+           ts_search:(5:<0.3535.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.2914.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.3585.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.3260.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.2743.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.2818.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.2948.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:08 ===
+           ts_search:(5:<0.3255.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:09 ===
+           ts_search:(5:<0.3588.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:09 ===
+           ts_search:(5:<0.3745.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:09 ===
+           ts_search:(5:<0.2524.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:09 ===
+           ts_search:(5:<0.1670.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:10 ===
+           ts_search:(5:<0.3042.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:10 ===
+           ts_search:(5:<0.2875.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:10 ===
+           ts_search:(5:<0.3725.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:10 ===
+           ts_search:(5:<0.1508.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.3253.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.1365.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.3490.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.3585.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.2467.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.3725.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.3514.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:11 ===
+           ts_search:(5:<0.2437.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.2437.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.3567.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.3410.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.3812.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.2684.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.3021.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:12 ===
+           ts_search:(5:<0.2834.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:13 ===
+           ts_search:(5:<0.3518.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:13 ===
+           ts_search:(5:<0.2206.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:13 ===
+           ts_search:(5:<0.3313.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:14 ===
+           ts_search:(5:<0.2805.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:14 ===
+           ts_search:(5:<0.3064.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.2494.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.2466.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.2527.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.3535.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.2697.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.3282.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.3525.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.3420.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:15 ===
+           ts_search:(5:<0.3139.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.3658.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.3479.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.2674.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.3281.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.2501.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.2527.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.3431.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.2916.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:16 ===
+           ts_search:(5:<0.2813.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3567.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.2457.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3364.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3364.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3381.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3805.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.2728.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.2658.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.3189.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.2466.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:17 ===
+           ts_search:(5:<0.2927.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3808.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3136.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3525.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3658.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3126.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3601.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.2805.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3016.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:18 ===
+           ts_search:(5:<0.3571.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:19 ===
+           ts_search:(5:<0.2916.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:19 ===
+           ts_search:(5:<0.2925.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:19 ===
+           ts_search:(5:<0.2484.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:19 ===
+           ts_search:(5:<0.3255.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.3518.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.3431.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.3449.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.3281.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.2689.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.2492.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.2927.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:20 ===
+           ts_search:(5:<0.3873.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:21 ===
+           ts_search:(5:<0.3366.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:21 ===
+           ts_search:(5:<0.3395.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:21 ===
+           ts_search:(5:<0.3079.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.2460.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.3883.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.2277.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.2412.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.3425.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.3886.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:22 ===
+           ts_search:(5:<0.2697.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:23 ===
+           ts_search:(5:<0.3515.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:23 ===
+           ts_search:(5:<0.2857.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:24 ===
+           ts_search:(5:<0.2438.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:24 ===
+           ts_search:(5:<0.3745.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:24 ===
+           ts_search:(5:<0.2977.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:24 ===
+           ts_search:(5:<0.3873.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.3799.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.2885.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.2412.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.3191.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.1909.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:25 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2687.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.3571.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.2958.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:26 ===
+           ts_search:(5:<0.3222.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:27 ===
+           ts_search:(5:<0.2692.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:27 ===
+           ts_search:(5:<0.2896.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:27 ===
+           ts_search:(5:<0.2589.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:27 ===
+           ts_search:(5:<0.2758.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:27 ===
+           ts_search:(5:<0.3191.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2622.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2658.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2588.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2731.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2064.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.2896.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.3500.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:28 ===
+           ts_search:(5:<0.3016.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:29 ===
+           ts_search:(5:<0.2883.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:29 ===
+           ts_search:(5:<0.2732.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:29 ===
+           ts_search:(5:<0.3686.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:30 ===
+           ts_search:(5:<0.3566.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:31 ===
+           ts_search:(5:<0.3642.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:32 ===
+           ts_search:(5:<0.3282.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:32 ===
+           ts_search:(5:<0.3541.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:32 ===
+           ts_search:(5:<0.2501.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:32 ===
+           ts_search:(5:<0.2598.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:32 ===
+           ts_search:(5:<0.3391.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:33 ===
+           ts_search:(5:<0.2457.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:33 ===
+           ts_search:(5:<0.3546.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:34 ===
+           ts_search:(5:<0.2929.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:34 ===
+           ts_search:(5:<0.2303.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:34 ===
+           ts_search:(5:<0.3878.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:35 ===
+           ts_search:(5:<0.3878.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:35 ===
+           ts_search:(5:<0.3313.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:36 ===
+           ts_search:(5:<0.3094.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:38 ===
+           ts_search:(5:<0.3864.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:40 ===
+           ts_search:(5:<0.3395.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:40 ===
+           ts_search:(5:<0.2810.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:41 ===
+           ts_search:(5:<0.3381.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:42 ===
+           ts_search:(5:<0.3759.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:42 ===
+           ts_search:(5:<0.3383.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:42 ===
+           ts_search:(5:<0.3660.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:42 ===
+           ts_search:(5:<0.2494.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:42 ===
+           ts_search:(5:<0.3694.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:43 ===
+           ts_search:(5:<0.2914.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:44 ===
+           ts_search:(5:<0.3546.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:44 ===
+           ts_search:(5:<0.3366.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:46 ===
+           ts_search:(5:<0.3640.0>) Dyn Var: no Match (varname=quiz_author), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:47 ===
+           ts_search:(5:<0.3079.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:48 ===
+           ts_search:(5:<0.2492.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:48 ===
+           ts_search:(5:<0.2438.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:49 ===
+           ts_search:(5:<0.2588.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:50 ===
+           ts_search:(5:<0.2925.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:51 ===
+           ts_search:(5:<0.2692.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:52 ===
+           ts_search:(5:<0.2758.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:53 ===
+           ts_search:(5:<0.2467.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:54 ===
+           ts_search:(5:<0.2731.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:55 ===
+           ts_search:(5:<0.3575.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:56 ===
+           ts_search:(5:<0.3545.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:54:58 ===
+           ts_search:(5:<0.3423.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:00 ===
+           ts_search:(5:<0.2622.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:01 ===
+           ts_search:(5:<0.3460.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:02 ===
+           ts_search:(5:<0.3660.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:02 ===
+           ts_search:(5:<0.2589.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:03 ===
+           ts_search:(5:<0.3260.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:07 ===
+           ts_search:(5:<0.2810.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:07 ===
+           ts_search:(5:<0.2883.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:11 ===
+           ts_search:(5:<0.2929.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:14 ===
+           ts_search:(5:<0.2021.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:21 ===
+           ts_search:(5:<0.3391.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:23 ===
+           ts_search:(5:<0.3510.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:23 ===
+           ts_search:(5:<0.3333.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:23 ===
+           ts_search:(5:<0.3640.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:27 ===
+           ts_search:(5:<0.3589.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:33 ===
+           ts_search:(5:<0.2732.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:33 ===
+           ts_search:(5:<0.3479.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:34 ===
+           ts_search:(5:<0.3151.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:47 ===
+           ts_search:(5:<0.3808.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:55:48 ===
+           ts_search:(5:<0.2979.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:56:02 ===
+           ts_search:(5:<0.3828.0>) Dyn Var (RE): no Match (varname=created_quiz_id), 
+
+=INFO REPORT==== 23-Nov-2015::19:56:04 ===
+     ts_launcher_mgr:(5:<0.123.0>) No more active users 'tsung_controller@ip-172-30-3-183' "28159"
