@@ -1,35 +1,39 @@
-<% content_for :header do %>
-    <h1>Listing quizzes</h1>
-<% end %>
-
-<table class="table text-left">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Created at</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @quizzes.each do |quiz| %>
-      <tr>
-        <td><%= quiz.title %></td>
-        <td><%= quiz.description %></td>
-        <td><%= quiz.created_at %></td>
-        <td><%= link_to 'Show', quiz %></td>
-        <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
-        <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <% content_for :header do %>
+        <h1>Listing quizzes</h1>
     <% end %>
-  </tbody>
-</table>
 
-<%= will_paginate @quizzes, :param_name => :page %>
+<% cache(cache_key_for_my_quiz_table(current_user, params[:page])) do %>
+    <table class="table text-left">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Created at</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @quizzes.each do |quiz| %>
+          <% cache(quiz) do %>
+              <tr>
+                <td><%= quiz.title %></td>
+                <td><%= quiz.description %></td>
+                <td><%= quiz.created_at %></td>
+                <td><%= link_to 'Show', quiz %></td>
+                <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
+                <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Quiz', new_quiz_path(@quiz) %> | <%= link_to 'Main View', root_path() %>
+    <%= will_paginate @quizzes, :param_name => :page %>
+
+    <br>
+
+    <%= link_to 'New Quiz', new_quiz_path(@quiz) %> | <%= link_to 'Main View', root_path() %>
+<% end %>

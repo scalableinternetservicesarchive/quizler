@@ -34,7 +34,8 @@ class Friendship < ActiveRecord::Base
     end
 
     def get_incoming_pending_friendships_for(user)
-      where('friend_id = ? AND accepted_at IS NULL', user)
+        where('friend_id = ? AND accepted_at IS NULL', user)
+
     end
   end
 

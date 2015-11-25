@@ -1,23 +1,27 @@
-<div>
-  There are <%= pluralize(@users_count, 'result') %> related to "<strong><%= @username %></strong>"
-</div>
-<table class="table friendship-table friendship-table--center" align="center">
-  <thead>
-  <tr>
-    <th>Username</th>
-    <th>Email</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @users_joined_with_friendships.each do |result| %>
-  <% search_user_result = SearchUserResult.new(current_user, result) %>
+<% cache(cache_key_for_user_search_results_table(@username, params[:page])) do %>
+    <div>
+      There are <%= pluralize(@users_count, 'result') %> related to "<strong><%= @username %></strong>"
+    </div>
+    <table class="table friendship-table friendship-table--center" align="center">
+      <thead>
       <tr>
-        <th><%= search_user_result.username %></th>
-        <td><%= search_user_result.email %></td>
-        <td><%= add_friend_button search_user_result %></td>
+        <th>Username</th>
+        <th>Email</th>
       </tr>
-  <% end %>
-  </tbody>
-</table>
+      </thead>
+      <tbody>
+          <% @users_joined_with_friendships.each do |result| %>
+              <% search_user_result = SearchUserResult.new(current_user, result) %>
+              <% cache(cache_key_for_user_search_results_row(search_user_result)) do %>
+                  <tr>
+                    <th><%= search_user_result.username %></th>
+                    <td><%= search_user_result.email %></td>
+                    <td><%= add_friend_button search_user_result %></td>
+                  </tr>
+              <% end %>
+          <% end %>
+      </tbody>
+    </table>
 
-<%= will_paginate @users_joined_with_friendships, :param_name => :page %>
+    <%= will_paginate @users_joined_with_friendships, :param_name => :page %>
+<% end %>

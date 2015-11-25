@@ -72,13 +72,13 @@ class User < ActiveRecord::Base
   def self.search_users(current_user, username)
     joined_table = "
     LEFT JOIN
-      (SELECT user_id, friend_id, accepted_at
+      (SELECT user_id, friend_id, accepted_at, updated_at
       FROM friendships
       WHERE (friend_id = #{current_user.id} OR user_id = #{current_user.id})) T
     ON T.user_id = users.id OR T.friend_id = users.id"
 
     User.where('username LIKE ? AND id <> ?',"%#{username}%", current_user.id)
         .joins(joined_table)
-        .select('users.id, users.username, users.email, user_id, friend_id, accepted_at')
+        .select('users.id, users.username, users.email, user_id, friend_id, accepted_at, users.updated_at AS user_updated_at, T.updated_at AS friendship_updated_at')
   end
 end

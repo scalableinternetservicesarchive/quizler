@@ -24,4 +24,14 @@ module FriendshipsHelper
   def number_friend_requests_text(pending_friendships)
     pluralize(pending_friendships.count, 'friend request')
   end
+
+  def cache_key_for_user_search_results_table(query_username, page)
+    max_updated_at = "#{Friendship.maximum(:updated_at)}-#{User.maximum(:updated_at)}"
+    "friendships/search_result/table/#{query_username}/#{max_updated_at}/#{page}"
+  end
+
+  def cache_key_for_user_search_results_row(search_result)
+    "friendships/search_result/row/#{search_result.username}/#{search_result.user_updated_at}/#{search_result.friendship_updated_at}"
+  end
+
 end

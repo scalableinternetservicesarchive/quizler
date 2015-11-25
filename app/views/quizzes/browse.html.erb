@@ -1,33 +1,38 @@
-<% content_for :header do %>
-    <h1>Listing quizzes</h1>
-<% end %>
-
-<table class="table text-left">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Author</th>
-      <th>Created at</th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @quizzes.each do |quiz| %>
-      <tr>
-        <td><%= quiz.title %></td>
-        <td><%= quiz.description %></td>
-        <td><%= quiz.author.username %></td>
-        <td><%= quiz.created_at %></td>
-        <td><%= link_to 'Play',  one_player_game_flow_ready_path(:quiz_id => quiz)%></td>
-      </tr>
+    <% content_for :header do %>
+        <h1>Listing quizzes</h1>
     <% end %>
-  </tbody>
-</table>
 
-<%= will_paginate @quizzes, :param_name => :page %>
+<% cache(cache_key_for_quiz_table(params[:page])) do %>
+    <table class="table text-left">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Author</th>
+          <th>Created at</th>
+          <th></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @quizzes.each do |quiz| %>
+          <% cache(quiz) do %>
+              <tr>
+                <td><%= quiz.title %></td>
+                <td><%= quiz.description %></td>
+                <td><%= quiz.author.username %></td>
+                <td><%= quiz.created_at %></td>
+                <td><%= link_to 'Play',  one_player_game_flow_ready_path(:quiz_id => quiz)%></td>
+              </tr>
+          <% end %>
+        <% end %>
+    </tbody>
+    </table>
 
-<%= link_to 'Main View', root_path() %>
+    <%= will_paginate @quizzes, :param_name => :page %>
+
+    <br>
+
+    <%= link_to 'Main View', root_path %>
+
+<% end %>

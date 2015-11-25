@@ -41,4 +41,12 @@ class SearchUserResult
     @result.id
   end
 
+  def user_updated_at
+    @result.user_updated_at
+  end
+
+  def friendship_updated_at
+    @result.friendship_updated_at
+  end
+
 end
