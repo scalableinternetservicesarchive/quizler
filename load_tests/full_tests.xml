@@ -435,9 +435,16 @@
         </request>
       </transaction>
 
-      <request>
-        <http url="/friends/search?username=he" method="GET" version="1.1"></http>
-      </request>
+
+      <transaction name="search_users_one_char">
+        <setdynvars sourcetype="random_string" length="1">
+          <var name="rndstring1" />
+        </setdynvars>
+        <request>
+          <http url="/friends/search?username=%%_rndstring1%%" method="GET" version="1.1"></http>
+        </request>
+      </transaction>
+
 
     </session>
 
