@@ -13,6 +13,9 @@ module FriendshipsHelper
     elsif search_user_result.friends?
       value_button = 'Friend'
       options[:disabled] = true
+    elsif search_user_result.incoming_pending_friend?
+      value_button = 'Received Friend request'
+      options[:disabled] = true
     end
 
     button_tag value_button, options

@@ -32,6 +32,13 @@ class FriendshipsHelperTest < ActionView::TestCase
 
     expected_result = '<button class="js-add-friend-btn" data-id="2" data-path="/friends" disabled="disabled" name="button" type="submit">Friend</button>'
     assert_equal expected_result, add_friend_button(search_user_result)
+
+    other_user2 = User.create!(username: 'user2', email: 'user2@ucsb.edu', password: 'password')
+    other_user2.friends << @current_user
+    users_joined_with_friendships = User.search_users(@current_user, 'user2')
+    search_user_result = SearchUserResult.new(@current_user, users_joined_with_friendships.first)
+    expected_result = '<button class="js-add-friend-btn" data-id="3" data-path="/friends" disabled="disabled" name="button" type="submit">Received Friend request</button>'
+    assert_equal expected_result, add_friend_button(search_user_result)
   end
 
   def test_number_friend_requests_text
