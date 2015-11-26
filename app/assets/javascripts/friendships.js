@@ -9,6 +9,7 @@ $(function() {
 
         var successCallback = function($addFriendBtn) {
             return function(data, status, xhr) {
+                debugger;
 
                 if (data.status === "success") {
                     $addFriendBtn.html('Friend request sent');
