@@ -1,0 +1,24 @@
+[25/Nov/2015:02:45:59 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151125-0239/favicon.ico: File not found"
+[25/Nov/2015:02:46:00 -0000] access to /assets/ico/favicon.ico failed for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151125-0239/assets/ico/favicon.ico: File not found"
+[25/Nov/2015:02:47:06 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151125-0239/favicon.ico: File not found"
+[25/Nov/2015:02:49:47 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[25/Nov/2015:02:49:47 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[25/Nov/2015:02:49:47 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[25/Nov/2015:02:49:47 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[25/Nov/2015:02:49:47 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[25/Nov/2015:02:49:56 -0000] server crash for 0:0:0:0:0:FFFF:A9E7:7B13, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
