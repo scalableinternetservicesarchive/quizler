@@ -1,0 +1,43 @@
+[27/Nov/2015:05:32:15 -0000] access to /assets/ico/favicon.ico failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0532/assets/ico/favicon.ico: File not found"
+[27/Nov/2015:05:32:55 -0000] access to /assets/ico/favicon.ico failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0532/assets/ico/favicon.ico: File not found"
+[27/Nov/2015:05:35:34 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:05:35:34 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:05:35:34 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:05:35:34 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:05:35:34 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:05:38:51 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0532/favicon.ico: File not found"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Perfs-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-mean_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Perfs-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-rate_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Transactions-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-mean_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Transactions-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-rate_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Size-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Size-rate_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Users_Arrival-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users_Arrival-rate_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-load-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-load-mean_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-HTTP_CODE-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-HTTP_CODE-rate_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-Users-simultaneous_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users-simultaneous_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-cpu-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-cpu-mean_tn.png"
+[27/Nov/2015:05:38:54 -0000] access to /es/images/graphes-freemem-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-freemem-mean_tn.png"
