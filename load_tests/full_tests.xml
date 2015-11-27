@@ -9,7 +9,7 @@
 
   <!-- Server side setup -->
   <servers>
-    <server host="quizler-fmalinowski-2-1651810941.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
+    <server host="quizler-fmalinowski-8-caching-759770837.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
   </servers>
 
   <!-- Adding more users -->
