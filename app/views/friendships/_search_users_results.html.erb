@@ -1,4 +1,4 @@
-<% cache(cache_key_for_user_search_results_table(@username, params[:page])) do %>
+
     <div>
       There are <%= pluralize(@users_count, 'result') %> related to "<strong><%= @username %></strong>"
     </div>
@@ -24,4 +24,3 @@
     </table>
 
     <%= will_paginate @users_joined_with_friendships, :param_name => :page %>
-<% end %>

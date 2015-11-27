@@ -2,7 +2,6 @@
         <h1>Listing quizzes</h1>
     <% end %>
 
-<% cache(cache_key_for_quiz_table(params[:page])) do %>
     <table class="table text-left">
       <thead>
         <tr>
@@ -34,5 +33,3 @@
     <br>
 
     <%= link_to 'Main View', root_path %>
-
-<% end %>
