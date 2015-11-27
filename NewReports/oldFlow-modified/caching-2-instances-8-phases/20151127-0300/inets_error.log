@@ -1,0 +1,26 @@
+[27/Nov/2015:03:05:03 -0000] access to /oapi/getAd;jsessionid=981AA98F87E31660C0DC8F8CCEF1F3A9.soma-i-7b87fdc5 failed for 0:0:0:0:0:FFFF:40E9:ACCE, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0300/oapi/getAd;jsessionid=981AA98F87E31660C0DC8F8CCEF1F3A9.soma-i-7b87fdc5: File not found"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Transactions-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-mean_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Transactions-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-rate_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Perfs-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-mean_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Perfs-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-rate_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Size-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Size-rate_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Users_Arrival-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users_Arrival-rate_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-Users-simultaneous_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users-simultaneous_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-cpu-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-cpu-mean_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-load-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-load-mean_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-freemem-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-freemem-mean_tn.png"
+[27/Nov/2015:03:07:59 -0000] access to /es/images/graphes-HTTP_CODE-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-HTTP_CODE-rate_tn.png"
+[27/Nov/2015:03:08:10 -0000] access to /oapi/getAd;jsessionid=AE0AA8AC29EAE7F49EC5E4A036BA2511.soma-i-7b87fdc5 failed for 0:0:0:0:0:FFFF:40E9:ACC6, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0300/oapi/getAd;jsessionid=AE0AA8AC29EAE7F49EC5E4A036BA2511.soma-i-7b87fdc5: File not found"

@@ -1,0 +1,69 @@
+[27/Nov/2015:02:17:27 -0000] access to /oapi/img/adspacer.gif failed for 0:0:0:0:0:FFFF:D90C:1C82, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0210/oapi/img/adspacer.gif: File not found"
+[27/Nov/2015:02:18:29 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:18:29 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:18:29 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:18:29 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:18:29 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:21:19 -0000] access to /oapi/getAd;jsessionid=923509813265F82A2FFCCC9E5B4BEED3.soma-i-7b87fdc5 failed for 0:0:0:0:0:FFFF:40E9:ACCE, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0210/oapi/getAd;jsessionid=923509813265F82A2FFCCC9E5B4BEED3.soma-i-7b87fdc5: File not found"
+[27/Nov/2015:02:21:53 -0000] access to /js/general.js failed for 0:0:0:0:0:FFFF:68C0:E2, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0210/js/general.js: File not found"
+[27/Nov/2015:02:22:33 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:22:33 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:22:33 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:22:33 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:22:33 -0000] server crash for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
+[27/Nov/2015:02:22:45 -0000] access to /oapi/clickAd;jsessionid=402F891EFC2D34B34A48C70A58F649A0.soma-i-7b87fdc5 failed for 0:0:0:0:0:FFFF:7204:4E27, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0210/oapi/clickAd;jsessionid=402F891EFC2D34B34A48C70A58F649A0.soma-i-7b87fdc5: File not found"
+[27/Nov/2015:02:23:02 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:7204:4E27, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151127-0210/favicon.ico: File not found"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Transactions-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-mean_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Perfs-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-mean_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Transactions-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Perfs-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Perfs-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Size-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Size-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Users-simultaneous_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users-simultaneous_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Users_Arrival-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Users_Arrival-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-cpu-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-cpu-mean_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Errors-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Errors-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-load-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-load-mean_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-HTTP_CODE-rate_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-HTTP_CODE-rate_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-freemem-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-freemem-mean_tn.png"
+[27/Nov/2015:02:25:05 -0000] access to /es/images/graphes-Transactions-mean_tn.png failed for 0:0:0:0:0:FFFF:B8BB:AB67, reason: 
+"mod_esi: Client not authorized to evaluate: images/graphes-Transactions-mean_tn.png"
+[27/Nov/2015:02:25:32 -0000] server crash for 0:0:0:0:0:FFFF:7204:4E27, reason: 
+"Error reading request: No request received on keep-alive connection before server side timeout"
+
