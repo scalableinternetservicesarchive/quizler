@@ -9,7 +9,7 @@
 
   <!-- Server side setup -->
   <servers>
-    <server host="quizler-fmalinowski-caching-4-205424444.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
+    <server host="52.91.201.137" port="80" type="tcp"></server>
   </servers>
 
   <!-- Adding more users -->
@@ -34,9 +34,6 @@
     </arrivalphase>
     <arrivalphase phase="7" duration="30" unit="second">
       <users arrivalrate="32" unit="second"></users>
-    </arrivalphase>
-    <arrivalphase phase="8" duration="30" unit="second">
-      <users arrivalrate="64" unit="second"></users>
     </arrivalphase>
   </load>
 
