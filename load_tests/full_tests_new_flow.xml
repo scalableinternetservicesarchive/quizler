@@ -7,9 +7,9 @@
     <client host="localhost" use_controller_vm="true" maxusers='15000'/>
   </clients>
 
-  <!-- Server side setup -->
+  <!-- Server side setup 2 servers -->
   <servers>
-    <server host="quizler-fmalinowski-2-1651810941.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
+    <server host="quizler-fmalinowski-caching-2-163589529.us-east-1.elb.amazonaws.com" port="80" type="tcp"></server>
   </servers>
 
   <!-- Adding more users -->
@@ -56,7 +56,7 @@
 
 
 
-    <session name="create-quiz" probability="15" type="ts_http">
+    <session name="create-quiz" probability="20" type="ts_http">
       <request>
         <http url="/" version="1.1" method='GET'></http>
       </request>
@@ -190,7 +190,7 @@
 
 
 
-    <session name="play-game" probability="40" type="ts_http">
+    <session name="play-game" probability="50" type="ts_http">
 
       <transaction name="index">
         <request>
@@ -297,7 +297,7 @@
 
 
 
-    <session name="see-friend-requests-and-look-at-friends-and-search-friends" probability="10" type="ts_http">
+    <session name="see-friend-requests-and-look-at-friends-and-search-friends" probability="30" type="ts_http">
 
       <!-- Go to main page -->
       <request>
