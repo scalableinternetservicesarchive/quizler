@@ -1,0 +1,6 @@
+[03/Dec/2015:23:48:50 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:62B6:1131, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151203-2348/favicon.ico: File not found"
+[03/Dec/2015:23:48:51 -0000] access to /assets/ico/favicon.ico failed for 0:0:0:0:0:FFFF:62B6:1131, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151203-2348/assets/ico/favicon.ico: File not found"
+[03/Dec/2015:23:57:30 -0000] access to /favicon.ico failed for 0:0:0:0:0:FFFF:62B6:1131, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20151203-2348/favicon.ico: File not found"
