@@ -1,5 +1,0 @@
-Look at the simple.xml file in each folder to see the content of each load test.
-Both of those tests were executed with a DB of 10,000 users, 210,000 friendships, 10,000 quizzes, 80,000 questions.
-With about 40 friendships per user.
-
-The tests used the app at the commit b0045715bbd803f91d73689f6815d03c51c7a6f7 on master (merged pull request #54).

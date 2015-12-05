@@ -1,6 +1,0 @@
-Did the load testing on a singlePassenger m3.Large instance,
-with a tsung m3.Large instance.
-We wanted to see if it would help to scale vertically.
-
-The results show us that we still are stuck on approximately 1000
-connected users, even though we have way more actual users.

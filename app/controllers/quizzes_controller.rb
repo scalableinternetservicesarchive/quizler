@@ -4,11 +4,11 @@ class QuizzesController < ApplicationController
   # GET /quizzes
   # GET /quizzes.json
   def index
-    @quizzes = Quiz.where(author: current_user).paginate(:page => params[:page], :per_page => 30)
+    @quizzes = Quiz.where(author: current_user)
   end
 
   def browse
-    @quizzes = Quiz.paginate(:page => params[:page], :per_page => 30)
+    @quizzes = Quiz.all
   end
 
   # GET /quizzes/1
