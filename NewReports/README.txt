@@ -11,6 +11,8 @@ the sign in. However we still have non realistic sessions in this flow.
 And some actions related to find a friend or add a friend or see my friend requests have been merged together in a unique
 session.
 
+- before-pagination is reports from the stage before pagination was implemented
+
 
 Also for the tests with 1 instance. Sometimes we recorded 7 phases and sometimes we recorded 8 phases because we noticed that
 the graphs were unreadable with 8 phases.
