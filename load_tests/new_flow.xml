@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE tsung SYSTEM "/home/ec2-user/opt/tsung-1.5.0/share/tsung/tsung-1.0.dtd">
 <tsung loglevel="notice" version="1.0">
-
   <clients>
     <client host="localhost" use_controller_vm="true" maxusers="15000"/>
   </clients>
 
   <servers>
-    <server host="54.173.58.232" port="80" type="tcp"/>
+    <server host="52.91.201.137" port="80" type="tcp"/>
   </servers>
 
   <load>
@@ -158,34 +157,18 @@
 
 
     <session name="play-game" probability="50" type="ts_http">
-      <request>
-        <http url="/" version="1.1" method="GET"/>
-      </request>
-
-      <thinktime value="5" random="true"/>
-
-      <transaction name="sign_in_SHOW">
-        <request>
-          <dyn_variable name="authenticity_token"/>
-          <http url="/users/sign_in" method="GET" version="1.1"/>
-        </request>
-      </transaction>
-
-      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->           {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),           list_to_binary(http_uri:encode(binary_to_list(Val)))         end.">
-        <var name="escaped_authenticity_token"/>
-      </setdynvars>
-
-      <thinktime value="12" random="true"/>
-
-      <transaction name="sign_in_POST">
-        <request subst="true">
-          <http url="/users/sign_in" method="POST" version="1.1" contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%" content_type="application/x-www-form-urlencoded"/>
-        </request>
-      </transaction>
 
       <transaction name="index">
         <request>
           <http url="/" version="1.1" method="GET"/>
+        </request>
+      </transaction>
+
+      <thinktime value="2" random="true"/>
+
+      <transaction name="browse_quizzes_page_1">
+        <request>
+          <http url="/quizzes/browse" method="GET" version="1.1"/>
         </request>
       </transaction>
 
@@ -268,68 +251,7 @@
 
 
 
-
-
-
-
-    <session name="search-all-friends" probability="20" type="ts_http">
-
-      <request>
-        <http url="/" version="1.1" method="GET"/>
-      </request>
-
-      <thinktime value="5" random="true"/>
-
-      <request>
-        <dyn_variable name="authenticity_token"/>
-        <http url="/users/sign_in" method="GET" version="1.1"/>
-      </request>
-
-      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->           {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),           list_to_binary(http_uri:encode(binary_to_list(Val)))         end.">
-        <var name="escaped_authenticity_token"/>
-      </setdynvars>
-
-      <thinktime value="12" random="true"/>
-
-      <request subst="true">
-        <http url="/users/sign_in" method="POST" version="1.1" contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%" content_type="application/x-www-form-urlencoded"/>
-      </request>
-
-      <request>
-        <http url="/" version="1.1" method="GET"/>
-      </request>
-
-      <thinktime value="5" random="true"/>
-
-      <request>
-        <dyn_variable name="meta_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
-        <http url="/friends/search" method="GET" version="1.1"/>
-      </request>
-
-      <thinktime value="5" random="true"/>
-
-      <transaction name="search_all_users">
-        <request>
-          <http url="/friends/fetch_users?username=" method="GET" version="1.1"/>
-        </request>
-      </transaction>
-
-      <transaction name="search_he_users">
-        <request>
-          <http url="/friends/fetch_users?username=he" method="GET" version="1.1"/>
-        </request>
-      </transaction>
-
-    </session>
-
-
-
-
-
-
-
-
-    <session name="see-friend-requests-and-look-at-friends" probability="10" type="ts_http">
+    <session name="see-friend-requests-and-look-at-friends-and-search-friends" probability="30" type="ts_http">
 
       <request>
         <http url="/" version="1.1" method="GET"/>
@@ -371,6 +293,26 @@
           <http url="/friends" method="GET" version="1.1"/>
         </request>
       </transaction>
+
+      <request>
+        <http url="/friends/search" method="GET" version="1.1"/>
+      </request>
+
+      <thinktime value="5" random="true"/>
+
+      <transaction name="search_all_users">
+        <request>
+          <http url="/friends/search?username=" method="GET" version="1.1"/>
+        </request>
+      </transaction>
+
+      <setdynvars sourcetype="random_string" length="1">
+        <var name="rndstring1"/>
+      </setdynvars>
+
+      <request subst="true">
+        <http url="/friends/search?username=%%_rndstring1%%" method="GET" version="1.1"/>
+      </request>
 
     </session>
 
