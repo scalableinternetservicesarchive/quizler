@@ -13,6 +13,10 @@ session.
 
 - before-pagination is reports from the stage before pagination was implemented
 
+- master, reports from load test on master (SQL optimization and pagination) (Date: Dec 7 2015)
+
+- with-pagination, reports from load test after we implemented pagination (without SQL optimization) 
+
 
 Also for the tests with 1 instance. Sometimes we recorded 7 phases and sometimes we recorded 8 phases because we noticed that
 the graphs were unreadable with 8 phases.
