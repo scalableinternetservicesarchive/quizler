@@ -56,10 +56,12 @@
 
       <thinktime value="5" random="true"/>
 
-      <request>
-        <dyn_variable name="authenticity_token"/>
-        <http url="/users/sign_in" method="GET" version="1.1"/>
-      </request>
+      <transaction name="sign_in_SHOW">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/users/sign_in" method="GET" version="1.1"/>
+        </request>
+      </transaction>
 
       <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->           {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),           list_to_binary(http_uri:encode(binary_to_list(Val)))         end.">
         <var name="escaped_authenticity_token"/>
@@ -67,9 +69,11 @@
 
       <thinktime value="12" random="true"/>
 
-      <request subst="true">
-        <http url="/users/sign_in" method="POST" version="1.1" contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%" content_type="application/x-www-form-urlencoded"/>
-      </request>
+      <transaction name="sign_in_POST">
+        <request subst="true">
+          <http url="/users/sign_in" method="POST" version="1.1" contents="user%5Bemail%5D=heather%40whatever.com&amp;user%5Bpassword%5D=awesomepassword&amp;user%5Bremember_me%5D=1&amp;authenticity_token=%%_escaped_authenticity_token%%" content_type="application/x-www-form-urlencoded"/>
+        </request>
+      </transaction>
 
       <request>
         <http url="/" version="1.1" method="GET"/>
